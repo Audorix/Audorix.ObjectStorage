@@ -1,0 +1,51 @@
+name: audorix-objectstorage
+services:
+  storage:
+    image: ${AUDORIX_IMAGE:-audorix-objectstorage:0.1.0-rc.2}
+    build:
+      context: ../..
+      dockerfile: deployment/single-node/Dockerfile
+    read_only: true
+    user: "10001:10001"
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ["/tmp:size=64m,mode=1777"]
+    ports: ["${AUDORIX_BIND_ADDRESS:-127.0.0.1}:${AUDORIX_PORT:-5195}:8080"]
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      AllowedHosts: ${AUDORIX_ALLOWED_HOSTS:-localhost;127.0.0.1}
+      Deployment__Identity: ${AUDORIX_DEPLOYMENT_ID:?required}
+      Deployment__StorageRoot: ${AUDORIX_STORAGE_ROOT:-/var/lib/audorix}
+      Deployment__DataProtectionRoot: /var/lib/audorix-dp
+      ConnectionStrings__AudorixObjectStorage: ${AUDORIX_POSTGRES_CONNECTION:?external secret required}
+      PostgreSql__Schema: ${AUDORIX_POSTGRES_SCHEMA:?required}
+      S3__Bucket: ${AUDORIX_BUCKET:?required}
+      S3__AccessKeyId: ${AUDORIX_S3_ACCESS_KEY:?external secret required}
+      S3__SecretAccessKey: ${AUDORIX_S3_SECRET_KEY:?external secret required}
+      S3__ContinuationTokenSigningKey: ${AUDORIX_S3_TOKEN_KEY:?external secret required}
+      Operations__BearerToken: ${AUDORIX_OPERATIONS_TOKEN:?external secret required}
+      Limits__MaxObjectBytes: 67108864
+      Limits__MaxConcurrentOperations: 8
+      Limits__MaxQueuedOperations: 4
+    volumes:
+      - audorix_blobs:/var/lib/audorix
+      - audorix_dp:/var/lib/audorix-dp
+      - audorix_backups:/var/backups/audorix
+    restart: unless-stopped
+    stop_grace_period: 2m
+    cpus: 2.0
+    mem_limit: 1g
+    pids_limit: 256
+    healthcheck:
+      test: [CMD, curl, -fsS, http://127.0.0.1:8080/health/ready]
+      interval: 15s
+      timeout: 5s
+      retries: 4
+      start_period: 20s
+volumes:
+  audorix_blobs:
+    name: ${AUDORIX_BLOB_VOLUME:-audorix-objectstorage-blobs}
+  audorix_dp:
+    name: ${AUDORIX_DP_VOLUME:-audorix-objectstorage-dp}
+  audorix_backups:
+    name: ${AUDORIX_BACKUP_VOLUME:-audorix-objectstorage-backups}

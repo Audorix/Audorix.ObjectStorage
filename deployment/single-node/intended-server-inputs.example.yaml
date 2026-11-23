@@ -1,0 +1,55 @@
+authorization:
+  change_request: REQUIRED
+  approved_by: REQUIRED
+  maintenance_window_utc: REQUIRED
+server:
+  identity: REQUIRED
+  os: Linux distribution and version
+  architecture: x86_64 or arm64
+  access_method: approved SSH/bastion/console reference
+storage:
+  blob_volume: absolute local persistent path or volume name
+  data_protection_volume: absolute local persistent path or volume name
+  capacity_bytes: REQUIRED
+  filesystem: REQUIRED
+  owner_uid_gid: "10001:10001"
+postgresql:
+  endpoint: REQUIRED
+  database: REQUIRED
+  schema: REQUIRED
+  tls_mode: verify-full
+  provisioning_identity_secret_ref: REQUIRED
+  runtime_identity_secret_ref: REQUIRED
+  backup_restore_identity_secret_ref: REQUIRED
+network:
+  exposure: private-or-authorized-dns
+  bind_address: REQUIRED
+  dns_name: REQUIRED_IF_DNS
+  trusted_proxy_ips: []
+tls:
+  termination: kestrel-or-authorized-proxy
+  certificate_secret_ref: REQUIRED
+  private_key_secret_ref: REQUIRED
+  renewal_owner: REQUIRED
+resources:
+  cpu_limit: 2
+  memory_bytes: 1073741824
+  max_object_bytes: 67108864
+  expected_peak_concurrency: REQUIRED
+  expected_object_size_distribution: REQUIRED
+backup:
+  destination: REQUIRED
+  retention_days: 14
+  restore_owner: REQUIRED
+monitoring:
+  destination: REQUIRED
+  operational_owner: REQUIRED
+  escalation_contact: REQUIRED
+rollback:
+  prior_image_digest: REQUIRED
+  approver: REQUIRED
+secrets:
+  s3_access_key_ref: REQUIRED
+  s3_secret_key_ref: REQUIRED
+  continuation_token_key_ref: REQUIRED
+  operations_token_ref: REQUIRED

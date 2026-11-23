@@ -1,0 +1,18 @@
+{
+  "completedAt": "2026-09-30T19:40:19.8305859+00:00",
+  "requestedDuration": "00:01:00",
+  "actualDuration": "00:01:00.0274297",
+  "concurrency": 4,
+  "objectBytes": 65536,
+  "totalOperations": 52555,
+  "verifiedHashes": 10511,
+  "failureCount": 0,
+  "failures": [],
+  "operations": [
+    { "operation": "delete", "count": 10511, "minimumMilliseconds": 0.8741, "p50Milliseconds": 1.7241, "p95Milliseconds": 3.4, "maximumMilliseconds": 66.4015 },
+    { "operation": "list", "count": 10511, "minimumMilliseconds": 1.2253, "p50Milliseconds": 2.5478, "p95Milliseconds": 5.4689, "maximumMilliseconds": 84.8874 },
+    { "operation": "range", "count": 10511, "minimumMilliseconds": 0.9409, "p50Milliseconds": 1.8676, "p95Milliseconds": 3.98, "maximumMilliseconds": 33.021 },
+    { "operation": "read", "count": 10511, "minimumMilliseconds": 1.2274, "p50Milliseconds": 2.2391, "p95Milliseconds": 6.2133, "maximumMilliseconds": 52.8563 },
+    { "operation": "upload", "count": 10511, "minimumMilliseconds": 2.9538, "p50Milliseconds": 7.0975, "p95Milliseconds": 35.0085, "maximumMilliseconds": 604.338 }
+  ]
+}

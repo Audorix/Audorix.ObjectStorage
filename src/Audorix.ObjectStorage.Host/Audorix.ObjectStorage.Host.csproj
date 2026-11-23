@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Audorix.ObjectStorage\Audorix.ObjectStorage.csproj" />
+    <ProjectReference Include="..\Audorix.ObjectStorage.PostgreSql\Audorix.ObjectStorage.PostgreSql.csproj" />
+    <ProjectReference Include="..\Audorix.ObjectStorage.S3\Audorix.ObjectStorage.S3.csproj" />
+  </ItemGroup>
+
+</Project>

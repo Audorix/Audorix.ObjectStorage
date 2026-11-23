@@ -1,0 +1,74 @@
+{
+  "completedAt": "2026-09-30T21:05:59.5244633+00:00",
+  "runId": "8c2ed0a221fc41d994350e602264ded2",
+  "candidateVersion": "0.1.0-rc.2",
+  "sourceCommit": "4c5bbe953687023018eb3d2ca230f75e4e6f6c94",
+  "topology": "package-only Kestrel host, client, run-owned PostgreSQL proxy, filesystem, and PostgreSQL on one local machine",
+  "faultScope": "isolated schema, bucket, root, credentials, proxy, and child processes",
+  "phases": [
+    {
+      "phase": "baseline-acknowledged",
+      "passed": true,
+      "bytes": 1048576
+    },
+    {
+      "phase": "database-proxy-interruption",
+      "uploadFailedDuringFault": true,
+      "listFailedDuringFault": true,
+      "recovered": true,
+      "passed": true
+    },
+    {
+      "phase": "injected-disk-write-failure",
+      "mechanism": "run-owned staging directory replaced by a regular file",
+      "diskFull": false,
+      "failedExplicitly": true,
+      "previousVersionPreserved": true,
+      "passed": true
+    },
+    {
+      "phase": "termination-during-staging",
+      "barrier": "non-empty .staging file observed",
+      "acknowledged": false,
+      "outcome": "previous committed version",
+      "passed": true
+    },
+    {
+      "phase": "termination-after-acknowledgment",
+      "acknowledged": true,
+      "hashVerifiedAfterRestart": true,
+      "passed": true
+    },
+    {
+      "phase": "termination-around-metadata-publication",
+      "barrier": "new .blob file observed",
+      "acknowledgedAtBarrier": false,
+      "eventuallyAcknowledged": false,
+      "outcome": "previous-complete-version",
+      "passed": true
+    },
+    {
+      "phase": "post-recovery-operations-and-reconciliation",
+      "listed": 2,
+      "rangeVerified": true,
+      "overwriteVerified": true,
+      "deleteVerified": true,
+      "reconciliation": {
+        "referencedBlobs": 1,
+        "physicalBlobs": 1,
+        "missingBlobs": 0,
+        "unreferencedBlobs": 0,
+        "stagingFiles": 0
+      },
+      "cleanupPreservedLiveObject": true,
+      "passed": true
+    }
+  ],
+  "acknowledgedWriteIntegrity": true,
+  "uncertainWriteOutcome": "previous-complete-version",
+  "reconciliationPassed": true,
+  "cleanupPreservedLiveObject": true,
+  "processTerminationIsPowerLossCertification": false,
+  "failures": [],
+  "passed": true
+}

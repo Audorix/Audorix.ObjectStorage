@@ -1,0 +1,46 @@
+# Build and package outputs
+**/bin/
+**/obj/
+artifacts/
+*.nupkg
+*.snupkg
+TestResults/
+test-output/
+
+# Local runtime and pilot state
+.pilot/
+.soak/
+.capacity/
+.recovery/
+.deployment/
+.aws-cli/
+.verification/
+.package-consumer-cache/
+App_Data/
+**/blobs/
+**/staging/
+**/backups/
+**/logs/
+*.backup
+*.dump
+*.log
+*.pid
+
+# Credentials and machine-local configuration
+**/database.json
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+**/secrets.json
+**/*.secrets.json
+.env
+.env.*
+!.env.example
+
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+.DS_Store
+Thumbs.db

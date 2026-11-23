@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-10-01T00:15:00Z",
+  "candidate": { "version": "0.1.0-rc.2", "sourceCommit": "4c5bbe953687023018eb3d2ca230f75e4e6f6c94", "shippingContentsChanged": false },
+  "packagesSha256": {
+    "Audorix.ObjectStorage.0.1.0-rc.2.nupkg": "F7A1847C1B9968BD1FF37CE27639D6ABD0256CAFFAF363372A128A3FDA4D08FE",
+    "Audorix.ObjectStorage.Api.0.1.0-rc.2.nupkg": "C283BDCD7CCDD75702B0D342781D366DB796AECC9A4F49BCBC6BD9D530510432",
+    "Audorix.ObjectStorage.PostgreSql.0.1.0-rc.2.nupkg": "0858DC2761023F421397B598C08C422B4C77CADB313462B471E0D9E173BA2CB4",
+    "Audorix.ObjectStorage.S3.0.1.0-rc.2.nupkg": "A88788A91C99EA99E9D1CAE882472D150B92A6C161642628B57CCD1ACF60D00E"
+  },
+  "deploymentEvidenceCommit": "c4064a7f0a520b8b0a9181d6760104fdc9288adb",
+  "target": { "authorized": false, "intendedServerValidation": "pending", "localEndpoint": "http://127.0.0.1:5195/s3", "publicExposure": false },
+  "images": {
+    "deployment": "sha256:ed51fa14ec1fdaec2aa615fa3313c4f986d27806b3b6059bc5ff4aeddfa178b3",
+    "sdkBase": "mcr.microsoft.com/dotnet/sdk:10.0.300@sha256:c0790639332692a0d56cdd81ed581cfd24d040d9839764c138994866df89a3b6",
+    "runtimeBase": "mcr.microsoft.com/dotnet/aspnet:10.0.12@sha256:2d584d8147faddb0d678c5748d47953e5b8e18621ed4fb7049a91381d9d7746f",
+    "localPostgreSql": "postgres:18.3-bookworm@sha256:80630f83606d8db77d30b3851b16a9f78be2d0d4dda6f7b82a1fdca5ebe3acba"
+  },
+  "assembliesSha256": {
+    "Audorix.ObjectStorage.dll": "0e2c9fd08fc21350a8634c0276dce33edb17f9e822444bdfb37dcf6cb4448ef5",
+    "Audorix.ObjectStorage.PostgreSql.dll": "89cbdae568bb99c22b297b5e7627bee9c06b53d0f4439293df6144ecc5874b02",
+    "Audorix.ObjectStorage.S3.dll": "60245e8fe2a1c670f18caf8b0f0997f3a0652d32ff13839b0bfadb57862f6152",
+    "Audorix.ObjectStorage.DeploymentHost.dll": "68b65ad1542db9eb01daa57ef711318766c6bdf6bfb8c4e0471d2b398046ac47"
+  },
+  "checks": {
+    "packageHashGate": "passed", "packageOnlyImageBuild": "passed", "nonRootUid10001": "passed", "readOnlyRoot": "passed",
+    "readiness": "passed", "cliPutHeadMetadataSpecialKeyListRangeHashGetDelete": "passed", "invalidCredentialDenied": "passed",
+    "oversizeUploadRejected": "passed", "containerReplacementPersistence": "passed", "gracefulStopRestart": "passed",
+    "pairedBackup": "passed", "separateRestoreAndReconciliation": "passed", "emptyWrongMountRejected": "passed", "emptyWrongDatabaseRejected": "passed",
+    "releaseBuilds": "five relevant projects passed with 0 warnings and 0 errors in isolated outputs", "regressions": "39 passed, 1 AWS CLI test skipped", "packageConsumer": "1 passed",
+    "tlsProxyPath": "not executed; no authorized target or certificate", "intendedServer": "not executed; no authorized target"
+  },
+  "boundedLoad": { "durationSeconds": 396.892, "iterations": 20, "operations": 100, "failures": 0, "averageServerLatencyMs": 8.8947, "workingSetBytes": 128843776, "managedHeapBytes": 7718560, "stagingFilesAfter": 0, "claim": "local functional/resource sample only" },
+  "existingPilot": { "modified": false, "storage5185": 200, "api5165": 200, "frontend5273": 200 },
+  "blockers": ["No authorized intended server or target authentication was supplied.", "TLS/reverse-proxy behavior is unverified.", "No project license has been supplied; public distribution remains blocked."]
+}

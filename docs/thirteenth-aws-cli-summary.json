@@ -1,0 +1,37 @@
+{
+  "completedAt": "2026-09-30T21:09:11.1359997+00:00",
+  "candidateVersion": "0.1.0-rc.2",
+  "sourceCommit": "4c5bbe953687023018eb3d2ca230f75e4e6f6c94",
+  "awsCliVersion": "aws-cli/2.37.6 Python/3.14.6 Windows/11 exe/AMD64",
+  "endpoint": "http://127.0.0.1:49449/s3",
+  "requiredConfiguration": {
+    "requestChecksumCalculation": "when_required",
+    "responseChecksumValidation": "when_required",
+    "forcePathStyle": true
+  },
+  "commands": [
+    "aws --endpoint-url <redacted-loopback>/s3 --region us-east-1 s3api put-object --bucket measurements --key <special-key> --body <file> --metadata owner=audorix,purpose=rc2",
+    "aws ... s3api head-object --bucket measurements --key <special-key>",
+    "aws ... s3api get-object --bucket measurements --key <special-key> <file>",
+    "aws ... s3api list-objects-v2 --bucket measurements --prefix metadata/",
+    "aws ... s3api get-object --bucket measurements --key <special-key> --range bytes=2-9 <file>",
+    "aws ... s3api delete-object --bucket measurements --key <special-key>"
+  ],
+  "supported": {
+    "put": true,
+    "head": true,
+    "metadata": true,
+    "getHash": true,
+    "listSpecialKey": true,
+    "range": true,
+    "delete": true
+  },
+  "unsupportedDefaultChecksum": {
+    "attempted": true,
+    "exitCode": 254,
+    "failedExplicitly": true,
+    "objectAbsent": true,
+    "diagnostic": " aws: [ERROR]: An error occurred (NotImplemented) when calling the PutObject operation: Additional S3 checksum headers are not supported in this slice."
+  },
+  "passed": true
+}

@@ -1,0 +1,2649 @@
+{
+  "runId": "20260930210955-050d2f23",
+  "environmentLabel": "local validation",
+  "packageVersion": "0.1.0-rc.2",
+  "packageSourceCommit": "4c5bbe953687023018eb3d2ca230f75e4e6f6c94",
+  "startedAt": "2026-09-30T21:09:57.6531829+00:00",
+  "endedAt": "2026-09-30T23:11:29.2838347+00:00",
+  "workloadDuration": "02:00:00.0036454",
+  "options": {
+    "runId": "20260930210955-050d2f23",
+    "duration": "02:00:00",
+    "concurrency": 4,
+    "smallObjectBytes": 65536,
+    "largeObjectBytes": 4194304,
+    "diskBudgetBytes": 1073741824,
+    "checkpointInterval": "00:01:00",
+    "runDirectory": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\runs\\20260930210955-050d2f23",
+    "outputPath": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\runs\\20260930210955-050d2f23\\summary.json",
+    "checkpointPath": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\runs\\20260930210955-050d2f23\\checkpoint.json"
+  },
+  "acceptanceBudgets": {
+    "unexpectedFailures": 0,
+    "retries": 0,
+    "dataOperationP95Milliseconds": 2000,
+    "cleanupP95Milliseconds": 10000,
+    "controlledCancellationP95Milliseconds": 5000,
+    "managedHeapBytes": 536870912,
+    "workingSetBytes": 1073741824,
+    "runDiskBytes": 1073741824,
+    "postgreSqlConnections": 32,
+    "residualStagingFiles": 0,
+    "missingOrUnreferencedBlobs": 0
+  },
+  "environment": {
+    "operatingSystem": "Microsoft Windows 10.0.26200",
+    "architecture": "X64",
+    "runtime": "10.0.12",
+    "logicalProcessors": 20,
+    "availableManagedMemoryBytes": 68441858048,
+    "initialFreeDiskBytes": 684843753472,
+    "postgreSqlServerVersion": "18.3",
+    "postgreSqlClientVersion": "pg_restore (PostgreSQL) 18.3",
+    "networkTopology": "Kestrel loopback HTTP; PostgreSQL host localhost:5432; single local machine"
+  },
+  "candidatePackages": [
+    {
+      "file": "Audorix.ObjectStorage.0.1.0-rc.2.nupkg",
+      "bytes": 29055,
+      "sha256": "F7A1847C1B9968BD1FF37CE27639D6ABD0256CAFFAF363372A128A3FDA4D08FE"
+    },
+    {
+      "file": "Audorix.ObjectStorage.Api.0.1.0-rc.2.nupkg",
+      "bytes": 28473,
+      "sha256": "C283BDCD7CCDD75702B0D342781D366DB796AECC9A4F49BCBC6BD9D530510432"
+    },
+    {
+      "file": "Audorix.ObjectStorage.PostgreSql.0.1.0-rc.2.nupkg",
+      "bytes": 40763,
+      "sha256": "0858DC2761023F421397B598C08C422B4C77CADB313462B471E0D9E173BA2CB4"
+    },
+    {
+      "file": "Audorix.ObjectStorage.S3.0.1.0-rc.2.nupkg",
+      "bytes": 34804,
+      "sha256": "A88788A91C99EA99E9D1CAE882472D150B92A6C161642628B57CCD1ACF60D00E"
+    }
+  ],
+  "loadedAssemblies": [
+    {
+      "name": "Audorix.ObjectStorage",
+      "version": "0.1.0.0",
+      "path": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\build\\Audorix.ObjectStorage.dll",
+      "sha256": "0E2C9FD08FC21350A8634C0276DCE33EDB17F9E822444BDFB37DCF6CB4448EF5"
+    },
+    {
+      "name": "Audorix.ObjectStorage.PostgreSql",
+      "version": "0.1.0.0",
+      "path": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\build\\Audorix.ObjectStorage.PostgreSql.dll",
+      "sha256": "89CBDAE568BB99C22B297B5E7627BEE9C06B53D0F4439293DF6144ECC5874B02"
+    },
+    {
+      "name": "Audorix.ObjectStorage.S3",
+      "version": "0.1.0.0",
+      "path": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\build\\Audorix.ObjectStorage.S3.dll",
+      "sha256": "60245E8FE2A1C670F18CAF8B0F0997F3A0652D32FF13839B0BFADB57862F6152"
+    }
+  ],
+  "initialHost": {
+    "endpoint": "http://127.0.0.1:64362",
+    "processId": 27992,
+    "processStartedAt": "2026-09-30T23:10:01.1282552\u002B02:00",
+    "executablePath": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\build\\Audorix.ObjectStorage.LoadHarness.exe",
+    "executableSha256": "21A33A86FF929F9FAD379512AD047FC2D3103FC3CCD9038505D7751A52EABE5D"
+  },
+  "restartedHost": {
+    "endpoint": "http://127.0.0.1:50165",
+    "processId": 61720,
+    "processStartedAt": "2026-10-01T01:10:51.1721400\u002B02:00",
+    "executablePath": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\build\\Audorix.ObjectStorage.LoadHarness.exe",
+    "executableSha256": "21A33A86FF929F9FAD379512AD047FC2D3103FC3CCD9038505D7751A52EABE5D"
+  },
+  "restoredHost": {
+    "endpoint": "http://127.0.0.1:50179",
+    "processId": 33848,
+    "processStartedAt": "2026-10-01T01:11:04.9898012\u002B02:00",
+    "executablePath": "D:\\BlazorModulesForSale\\SyncfusionWinForm\\Audorix.ObjectStorage\\.soak\\build\\Audorix.ObjectStorage.LoadHarness.exe",
+    "executableSha256": "21A33A86FF929F9FAD379512AD047FC2D3103FC3CCD9038505D7751A52EABE5D"
+  },
+  "counters": {
+    "completedOperations": 204220,
+    "integrityChecks": 132367,
+    "expectedCancellations": 2167,
+    "expectedAuthorizationDenials": 2,
+    "unexpectedFailures": 0,
+    "retries": 0,
+    "uploadedBytes": 11776098304,
+    "downloadedBytes": 17825298214,
+    "failures": [],
+    "operations": [
+      {
+        "operation": "cancelled-overwrite",
+        "count": 2167,
+        "minimumMilliseconds": 196.8154,
+        "p50Milliseconds": 813,
+        "p95Milliseconds": 2176,
+        "p99Milliseconds": 3448,
+        "maximumMilliseconds": 12918.0388,
+        "averageMilliseconds": 962.6477215966776
+      },
+      {
+        "operation": "cleanup",
+        "count": 1530,
+        "minimumMilliseconds": 2.1502,
+        "p50Milliseconds": 2251,
+        "p95Milliseconds": 5419,
+        "p99Milliseconds": 10112,
+        "maximumMilliseconds": 30877.4323,
+        "averageMilliseconds": 2696.1950673202614
+      },
+      {
+        "operation": "delete",
+        "count": 21676,
+        "minimumMilliseconds": 0.6649,
+        "p50Milliseconds": 2,
+        "p95Milliseconds": 169,
+        "p99Milliseconds": 356,
+        "maximumMilliseconds": 4244.4871,
+        "averageMilliseconds": 31.694328293965665
+      },
+      {
+        "operation": "list-pagination",
+        "count": 5418,
+        "minimumMilliseconds": 5.6482,
+        "p50Milliseconds": 13,
+        "p95Milliseconds": 226,
+        "p99Milliseconds": 437,
+        "maximumMilliseconds": 6696.8215,
+        "averageMilliseconds": 56.635438372092864
+      },
+      {
+        "operation": "metadata",
+        "count": 21680,
+        "minimumMilliseconds": 0.5626,
+        "p50Milliseconds": 2,
+        "p95Milliseconds": 3,
+        "p99Milliseconds": 6,
+        "maximumMilliseconds": 274.1511,
+        "averageMilliseconds": 1.7187051845018637
+      },
+      {
+        "operation": "overwrite",
+        "count": 21677,
+        "minimumMilliseconds": 58.9518,
+        "p50Milliseconds": 321,
+        "p95Milliseconds": 1413,
+        "p99Milliseconds": 2254,
+        "maximumMilliseconds": 8087.1364,
+        "averageMilliseconds": 456.1109533330274
+      },
+      {
+        "operation": "overwrite-read",
+        "count": 21676,
+        "minimumMilliseconds": 0.8456,
+        "p50Milliseconds": 3,
+        "p95Milliseconds": 167,
+        "p99Milliseconds": 350,
+        "maximumMilliseconds": 5234.0797,
+        "averageMilliseconds": 36.63270300793507
+      },
+      {
+        "operation": "range-explicit",
+        "count": 21679,
+        "minimumMilliseconds": 0.6327,
+        "p50Milliseconds": 2,
+        "p95Milliseconds": 346,
+        "p99Milliseconds": 725,
+        "maximumMilliseconds": 6700.5798,
+        "averageMilliseconds": 73.71241902763073
+      },
+      {
+        "operation": "range-open",
+        "count": 21679,
+        "minimumMilliseconds": 0.6373,
+        "p50Milliseconds": 2,
+        "p95Milliseconds": 333,
+        "p99Milliseconds": 691,
+        "maximumMilliseconds": 7964.4668,
+        "averageMilliseconds": 72.08901519442783
+      },
+      {
+        "operation": "range-suffix",
+        "count": 21678,
+        "minimumMilliseconds": 0.5807,
+        "p50Milliseconds": 2,
+        "p95Milliseconds": 316,
+        "p99Milliseconds": 652,
+        "maximumMilliseconds": 6191.2179,
+        "averageMilliseconds": 65.14268026109426
+      },
+      {
+        "operation": "read",
+        "count": 21680,
+        "minimumMilliseconds": 0.7623,
+        "p50Milliseconds": 3,
+        "p95Milliseconds": 177,
+        "p99Milliseconds": 373,
+        "maximumMilliseconds": 4997.6997,
+        "averageMilliseconds": 40.78094546125471
+      },
+      {
+        "operation": "upload",
+        "count": 21680,
+        "minimumMilliseconds": 61.165,
+        "p50Milliseconds": 311,
+        "p95Milliseconds": 1345,
+        "p99Milliseconds": 2224,
+        "maximumMilliseconds": 8240.3048,
+        "averageMilliseconds": 439.4259921171589
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "at": "2026-09-30T21:10:42.3574023+00:00",
+      "process": {
+        "at": "2026-09-30T21:10:42.3574023+00:00",
+        "managedHeapBytes": 6409424,
+        "workingSetBytes": 80629760,
+        "totalProcessorMilliseconds": 2562.5,
+        "rootBytes": 16780470,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10704575
+      },
+      "completedOperations": 0,
+      "integrityChecks": 0,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 0,
+      "transferMiBPerSecond": 0
+    },
+    {
+      "at": "2026-09-30T21:11:43.1094636+00:00",
+      "process": {
+        "at": "2026-09-30T21:11:43.1094636+00:00",
+        "managedHeapBytes": 10210696,
+        "workingSetBytes": 101883904,
+        "totalProcessorMilliseconds": 8578.125,
+        "rootBytes": 19598518,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10786495
+      },
+      "completedOperations": 1410,
+      "integrityChecks": 915,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 23.209089038761554,
+      "transferMiBPerSecond": 2.078109180985409
+    },
+    {
+      "at": "2026-09-30T21:12:44.4890819+00:00",
+      "process": {
+        "at": "2026-09-30T21:12:44.4890819+00:00",
+        "managedHeapBytes": 15302648,
+        "workingSetBytes": 104841216,
+        "totalProcessorMilliseconds": 10890.625,
+        "rootBytes": 18943221,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10786495
+      },
+      "completedOperations": 1957,
+      "integrityChecks": 1267,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 8.91175304034108,
+      "transferMiBPerSecond": 1.5811170779459474
+    },
+    {
+      "at": "2026-09-30T21:13:46.4946538+00:00",
+      "process": {
+        "at": "2026-09-30T21:13:46.4946538+00:00",
+        "managedHeapBytes": 16394648,
+        "workingSetBytes": 105725952,
+        "totalProcessorMilliseconds": 12296.875,
+        "rootBytes": 17829046,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10786495
+      },
+      "completedOperations": 2411,
+      "integrityChecks": 1555,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 7.32192262869847,
+      "transferMiBPerSecond": 1.5130176559976483
+    },
+    {
+      "at": "2026-09-30T21:14:47.7973801+00:00",
+      "process": {
+        "at": "2026-09-30T21:14:47.7973801+00:00",
+        "managedHeapBytes": 18228032,
+        "workingSetBytes": 106987520,
+        "totalProcessorMilliseconds": 14390.625,
+        "rootBytes": 33754315,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10786495
+      },
+      "completedOperations": 3008,
+      "integrityChecks": 1937,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 9.738555461276443,
+      "transferMiBPerSecond": 0.9657322482159701
+    },
+    {
+      "at": "2026-09-30T21:15:49.1551891+00:00",
+      "process": {
+        "at": "2026-09-30T21:15:49.1551891+00:00",
+        "managedHeapBytes": 15724400,
+        "workingSetBytes": 106606592,
+        "totalProcessorMilliseconds": 16281.25,
+        "rootBytes": 19139766,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10786495
+      },
+      "completedOperations": 3662,
+      "integrityChecks": 2357,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 10.658789983847043,
+      "transferMiBPerSecond": 0.9957688216774516
+    },
+    {
+      "at": "2026-09-30T21:16:51.5421826+00:00",
+      "process": {
+        "at": "2026-09-30T21:16:51.5421826+00:00",
+        "managedHeapBytes": 13594104,
+        "workingSetBytes": 107732992,
+        "totalProcessorMilliseconds": 18250,
+        "rootBytes": 18025717,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10786495
+      },
+      "completedOperations": 4201,
+      "integrityChecks": 2702,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 8.639621333892295,
+      "transferMiBPerSecond": 1.550510484942288
+    },
+    {
+      "at": "2026-09-30T21:17:52.9011756+00:00",
+      "process": {
+        "at": "2026-09-30T21:17:52.9011756+00:00",
+        "managedHeapBytes": 20624320,
+        "workingSetBytes": 111513600,
+        "totalProcessorMilliseconds": 22125,
+        "rootBytes": 20253962,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10811071
+      },
+      "completedOperations": 5708,
+      "integrityChecks": 3676,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 24.560376993149156,
+      "transferMiBPerSecond": 3.388451331909586
+    },
+    {
+      "at": "2026-09-30T21:18:53.4346272+00:00",
+      "process": {
+        "at": "2026-09-30T21:18:53.4346272+00:00",
+        "managedHeapBytes": 24601808,
+        "workingSetBytes": 112345088,
+        "totalProcessorMilliseconds": 26859.375,
+        "rootBytes": 19598602,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 7211,
+      "integrityChecks": 4651,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 24.829246644181115,
+      "transferMiBPerSecond": 3.436726901069694
+    },
+    {
+      "at": "2026-09-30T21:19:54.3478502+00:00",
+      "process": {
+        "at": "2026-09-30T21:19:54.3478502+00:00",
+        "managedHeapBytes": 20112232,
+        "workingSetBytes": 113004544,
+        "totalProcessorMilliseconds": 30328.125,
+        "rootBytes": 53284106,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10794687
+      },
+      "completedOperations": 8340,
+      "integrityChecks": 5377,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 18.53456350520149,
+      "transferMiBPerSecond": 3.2073052674826226
+    },
+    {
+      "at": "2026-09-30T21:20:54.847949+00:00",
+      "process": {
+        "at": "2026-09-30T21:20:54.847949+00:00",
+        "managedHeapBytes": 19466224,
+        "workingSetBytes": 113217536,
+        "totalProcessorMilliseconds": 35281.25,
+        "rootBytes": 24448182,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 10130,
+      "integrityChecks": 6535,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 29.58672854266479,
+      "transferMiBPerSecond": 3.5967205990599322
+    },
+    {
+      "at": "2026-09-30T21:21:55.1919828+00:00",
+      "process": {
+        "at": "2026-09-30T21:21:55.1919828+00:00",
+        "managedHeapBytes": 21542728,
+        "workingSetBytes": 114737152,
+        "totalProcessorMilliseconds": 39171.875,
+        "rootBytes": 19926198,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 11580,
+      "integrityChecks": 7474,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 24.028887508676956,
+      "transferMiBPerSecond": 3.415975063236547
+    },
+    {
+      "at": "2026-09-30T21:22:55.9086146+00:00",
+      "process": {
+        "at": "2026-09-30T21:22:55.9086146+00:00",
+        "managedHeapBytes": 20951952,
+        "workingSetBytes": 114753536,
+        "totalProcessorMilliseconds": 44078.125,
+        "rootBytes": 19729590,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 13093,
+      "integrityChecks": 8454,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 24.9190370932269,
+      "transferMiBPerSecond": 3.429514623704081
+    },
+    {
+      "at": "2026-09-30T21:23:56.5753606+00:00",
+      "process": {
+        "at": "2026-09-30T21:23:56.5753606+00:00",
+        "managedHeapBytes": 24462672,
+        "workingSetBytes": 115884032,
+        "totalProcessorMilliseconds": 50578.125,
+        "rootBytes": 28904651,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 15433,
+      "integrityChecks": 9970,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.57137813193409,
+      "transferMiBPerSecond": 5.1927937522340155
+    },
+    {
+      "at": "2026-09-30T21:24:56.9292567+00:00",
+      "process": {
+        "at": "2026-09-30T21:24:56.9292567+00:00",
+        "managedHeapBytes": 24174208,
+        "workingSetBytes": 116453376,
+        "totalProcessorMilliseconds": 57125,
+        "rootBytes": 21368074,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 17927,
+      "integrityChecks": 11585,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 41.32293291998427,
+      "transferMiBPerSecond": 5.305655391788747
+    },
+    {
+      "at": "2026-09-30T21:25:57.2601581+00:00",
+      "process": {
+        "at": "2026-09-30T21:25:57.2601581+00:00",
+        "managedHeapBytes": 21237168,
+        "workingSetBytes": 116744192,
+        "totalProcessorMilliseconds": 63265.625,
+        "rootBytes": 30018826,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 20116,
+      "integrityChecks": 13003,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.28323047067883,
+      "transferMiBPerSecond": 5.136634696448128
+    },
+    {
+      "at": "2026-09-30T21:26:57.5123659+00:00",
+      "process": {
+        "at": "2026-09-30T21:26:57.5123659+00:00",
+        "managedHeapBytes": 21327248,
+        "workingSetBytes": 117067776,
+        "totalProcessorMilliseconds": 69546.875,
+        "rootBytes": 28839178,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 22301,
+      "integrityChecks": 14422,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.264231300085235,
+      "transferMiBPerSecond": 5.139255102443381
+    },
+    {
+      "at": "2026-09-30T21:27:57.9472441+00:00",
+      "process": {
+        "at": "2026-09-30T21:27:57.9472441+00:00",
+        "managedHeapBytes": 22940784,
+        "workingSetBytes": 116359168,
+        "totalProcessorMilliseconds": 76546.875,
+        "rootBytes": 29232394,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 24625,
+      "integrityChecks": 15927,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.45461543430396,
+      "transferMiBPerSecond": 5.205276033525556
+    },
+    {
+      "at": "2026-09-30T21:28:58.275162+00:00",
+      "process": {
+        "at": "2026-09-30T21:28:58.275162+00:00",
+        "managedHeapBytes": 21173784,
+        "workingSetBytes": 116654080,
+        "totalProcessorMilliseconds": 81218.75,
+        "rootBytes": 21040331,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 26659,
+      "integrityChecks": 17246,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 33.7157334581242,
+      "transferMiBPerSecond": 4.723521946358636
+    },
+    {
+      "at": "2026-09-30T21:29:58.5424225+00:00",
+      "process": {
+        "at": "2026-09-30T21:29:58.5424225+00:00",
+        "managedHeapBytes": 22375464,
+        "workingSetBytes": 116637696,
+        "totalProcessorMilliseconds": 86937.5,
+        "rootBytes": 40242442,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 28670,
+      "integrityChecks": 18548,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 33.36803404229731,
+      "transferMiBPerSecond": 5.041190543342343
+    },
+    {
+      "at": "2026-09-30T21:30:59.0895566+00:00",
+      "process": {
+        "at": "2026-09-30T21:30:59.0895566+00:00",
+        "managedHeapBytes": 22458128,
+        "workingSetBytes": 118689792,
+        "totalProcessorMilliseconds": 94515.625,
+        "rootBytes": 41291018,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 31040,
+      "integrityChecks": 20084,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.143058300425814,
+      "transferMiBPerSecond": 5.219776932010259
+    },
+    {
+      "at": "2026-09-30T21:31:59.5077521+00:00",
+      "process": {
+        "at": "2026-09-30T21:31:59.5077521+00:00",
+        "managedHeapBytes": 22619608,
+        "workingSetBytes": 115818496,
+        "totalProcessorMilliseconds": 101031.25,
+        "rootBytes": 30018826,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 33391,
+      "integrityChecks": 21608,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.91211878381902,
+      "transferMiBPerSecond": 5.2204350196264935
+    },
+    {
+      "at": "2026-09-30T21:32:59.6990064+00:00",
+      "process": {
+        "at": "2026-09-30T21:32:59.6990064+00:00",
+        "managedHeapBytes": 23183960,
+        "workingSetBytes": 116518912,
+        "totalProcessorMilliseconds": 107406.25,
+        "rootBytes": 29625631,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 35606,
+      "integrityChecks": 23045,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.79936605009409,
+      "transferMiBPerSecond": 5.165363976030331
+    },
+    {
+      "at": "2026-09-30T21:34:00.1230665+00:00",
+      "process": {
+        "at": "2026-09-30T21:34:00.1230665+00:00",
+        "managedHeapBytes": 24308760,
+        "workingSetBytes": 116621312,
+        "totalProcessorMilliseconds": 114406.25,
+        "rootBytes": 29887754,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 37864,
+      "integrityChecks": 24509,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.36922007993303,
+      "transferMiBPerSecond": 5.1654581276110205
+    },
+    {
+      "at": "2026-09-30T21:35:00.3703669+00:00",
+      "process": {
+        "at": "2026-09-30T21:35:00.3703669+00:00",
+        "managedHeapBytes": 24981920,
+        "workingSetBytes": 117202944,
+        "totalProcessorMilliseconds": 121531.25,
+        "rootBytes": 33361162,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 40079,
+      "integrityChecks": 25946,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.7651327992117,
+      "transferMiBPerSecond": 5.159589386528188
+    },
+    {
+      "at": "2026-09-30T21:36:00.6075744+00:00",
+      "process": {
+        "at": "2026-09-30T21:36:00.6075744+00:00",
+        "managedHeapBytes": 23785472,
+        "workingSetBytes": 117551104,
+        "totalProcessorMilliseconds": 128640.625,
+        "rootBytes": 42478858,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 42303,
+      "integrityChecks": 27388,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.920702208846585,
+      "transferMiBPerSecond": 5.165703093161152
+    },
+    {
+      "at": "2026-09-30T21:37:00.8066258+00:00",
+      "process": {
+        "at": "2026-09-30T21:37:00.8066258+00:00",
+        "managedHeapBytes": 24873536,
+        "workingSetBytes": 117256192,
+        "totalProcessorMilliseconds": 135546.875,
+        "rootBytes": 36056393,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 44694,
+      "integrityChecks": 28940,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.71823383250189,
+      "transferMiBPerSecond": 5.263532555005357
+    },
+    {
+      "at": "2026-09-30T21:38:01.0367753+00:00",
+      "process": {
+        "at": "2026-09-30T21:38:01.0367753+00:00",
+        "managedHeapBytes": 24090672,
+        "workingSetBytes": 116908032,
+        "totalProcessorMilliseconds": 142250,
+        "rootBytes": 21957898,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 46999,
+      "integrityChecks": 30435,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.26987014202911,
+      "transferMiBPerSecond": 5.207404360015024
+    },
+    {
+      "at": "2026-09-30T21:39:01.4441347+00:00",
+      "process": {
+        "at": "2026-09-30T21:39:01.4441347+00:00",
+        "managedHeapBytes": 24095800,
+        "workingSetBytes": 117604352,
+        "totalProcessorMilliseconds": 149265.625,
+        "rootBytes": 21957898,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 49432,
+      "integrityChecks": 32011,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 40.2765494828102,
+      "transferMiBPerSecond": 5.268478341940039
+    },
+    {
+      "at": "2026-09-30T21:40:01.951724+00:00",
+      "process": {
+        "at": "2026-09-30T21:40:01.951724+00:00",
+        "managedHeapBytes": 24307128,
+        "workingSetBytes": 118034432,
+        "totalProcessorMilliseconds": 155687.5,
+        "rootBytes": 24579338,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 51688,
+      "integrityChecks": 33474,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.284579109814246,
+      "transferMiBPerSecond": 5.159359609332188
+    },
+    {
+      "at": "2026-09-30T21:41:02.5872559+00:00",
+      "process": {
+        "at": "2026-09-30T21:41:02.5872559+00:00",
+        "managedHeapBytes": 25135768,
+        "workingSetBytes": 121896960,
+        "totalProcessorMilliseconds": 162109.375,
+        "rootBytes": 38014218,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 54026,
+      "integrityChecks": 34991,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.558250034910635,
+      "transferMiBPerSecond": 5.519125799554566
+    },
+    {
+      "at": "2026-09-30T21:42:03.1166764+00:00",
+      "process": {
+        "at": "2026-09-30T21:42:03.1166764+00:00",
+        "managedHeapBytes": 24475088,
+        "workingSetBytes": 119336960,
+        "totalProcessorMilliseconds": 170093.75,
+        "rootBytes": 53484768,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 56311,
+      "integrityChecks": 36473,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.75023750640401,
+      "transferMiBPerSecond": 5.887720959019407
+    },
+    {
+      "at": "2026-09-30T21:43:03.6417459+00:00",
+      "process": {
+        "at": "2026-09-30T21:43:03.6417459+00:00",
+        "managedHeapBytes": 21482544,
+        "workingSetBytes": 118837248,
+        "totalProcessorMilliseconds": 177140.625,
+        "rootBytes": 54463754,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 58611,
+      "integrityChecks": 37964,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.0007824691552,
+      "transferMiBPerSecond": 5.442116722792784
+    },
+    {
+      "at": "2026-09-30T21:44:04.0427301+00:00",
+      "process": {
+        "at": "2026-09-30T21:44:04.0427301+00:00",
+        "managedHeapBytes": 22700776,
+        "workingSetBytes": 119255040,
+        "totalProcessorMilliseconds": 183703.125,
+        "rootBytes": 53742837,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 60860,
+      "integrityChecks": 39421,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.23449261278759,
+      "transferMiBPerSecond": 5.100103271719269
+    },
+    {
+      "at": "2026-09-30T21:45:04.44329+00:00",
+      "process": {
+        "at": "2026-09-30T21:45:04.44329+00:00",
+        "managedHeapBytes": 21732496,
+        "workingSetBytes": 119508992,
+        "totalProcessorMilliseconds": 190203.125,
+        "rootBytes": 53153013,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 63139,
+      "integrityChecks": 40899,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.73143831403457,
+      "transferMiBPerSecond": 5.115866195077314
+    },
+    {
+      "at": "2026-09-30T21:46:04.9044151+00:00",
+      "process": {
+        "at": "2026-09-30T21:46:04.9044151+00:00",
+        "managedHeapBytes": 23144256,
+        "workingSetBytes": 119480320,
+        "totalProcessorMilliseconds": 197468.75,
+        "rootBytes": 54070538,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 65598,
+      "integrityChecks": 42495,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 40.670761517138885,
+      "transferMiBPerSecond": 5.40775456471273
+    },
+    {
+      "at": "2026-09-30T21:47:05.0913312+00:00",
+      "process": {
+        "at": "2026-09-30T21:47:05.0913312+00:00",
+        "managedHeapBytes": 23304288,
+        "workingSetBytes": 120012800,
+        "totalProcessorMilliseconds": 204859.375,
+        "rootBytes": 23072010,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 68180,
+      "integrityChecks": 44171,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 42.89968928977905,
+      "transferMiBPerSecond": 5.367864694688699
+    },
+    {
+      "at": "2026-09-30T21:48:05.4492418+00:00",
+      "process": {
+        "at": "2026-09-30T21:48:05.4492418+00:00",
+        "managedHeapBytes": 22576992,
+        "workingSetBytes": 119304192,
+        "totalProcessorMilliseconds": 212281.25,
+        "rootBytes": 33361162,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 70561,
+      "integrityChecks": 45714,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.44801893125837,
+      "transferMiBPerSecond": 5.439165566581884
+    },
+    {
+      "at": "2026-09-30T21:49:06.1237317+00:00",
+      "process": {
+        "at": "2026-09-30T21:49:06.1237317+00:00",
+        "managedHeapBytes": 25403400,
+        "workingSetBytes": 119644160,
+        "totalProcessorMilliseconds": 219156.25,
+        "rootBytes": 32115915,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 72814,
+      "integrityChecks": 47175,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.132574228695745,
+      "transferMiBPerSecond": 5.272894488901909
+    },
+    {
+      "at": "2026-09-30T21:50:06.5893219+00:00",
+      "process": {
+        "at": "2026-09-30T21:50:06.5893219+00:00",
+        "managedHeapBytes": 24548032,
+        "workingSetBytes": 119308288,
+        "totalProcessorMilliseconds": 227109.375,
+        "rootBytes": 47844618,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 75128,
+      "integrityChecks": 48675,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.26970004503487,
+      "transferMiBPerSecond": 5.846525447352998
+    },
+    {
+      "at": "2026-09-30T21:51:07.4082079+00:00",
+      "process": {
+        "at": "2026-09-30T21:51:07.4082079+00:00",
+        "managedHeapBytes": 21591232,
+        "workingSetBytes": 119533568,
+        "totalProcessorMilliseconds": 234734.375,
+        "rootBytes": 54398218,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 77439,
+      "integrityChecks": 50175,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.99806527202751,
+      "transferMiBPerSecond": 5.484817795447893
+    },
+    {
+      "at": "2026-09-30T21:52:07.8921514+00:00",
+      "process": {
+        "at": "2026-09-30T21:52:07.8921514+00:00",
+        "managedHeapBytes": 20681600,
+        "workingSetBytes": 119672832,
+        "totalProcessorMilliseconds": 241921.875,
+        "rootBytes": 38538527,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 79992,
+      "integrityChecks": 51828,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 42.20954938230838,
+      "transferMiBPerSecond": 5.330895816662393
+    },
+    {
+      "at": "2026-09-30T21:53:08.4650638+00:00",
+      "process": {
+        "at": "2026-09-30T21:53:08.4650638+00:00",
+        "managedHeapBytes": 22983088,
+        "workingSetBytes": 118845440,
+        "totalProcessorMilliseconds": 248859.375,
+        "rootBytes": 21368074,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 82357,
+      "integrityChecks": 53365,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.0438548568122,
+      "transferMiBPerSecond": 5.211365963363424
+    },
+    {
+      "at": "2026-09-30T21:54:08.8395913+00:00",
+      "process": {
+        "at": "2026-09-30T21:54:08.8395913+00:00",
+        "managedHeapBytes": 23827552,
+        "workingSetBytes": 119668736,
+        "totalProcessorMilliseconds": 255796.875,
+        "rootBytes": 21499146,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 84715,
+      "integrityChecks": 54891,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.056206278384536,
+      "transferMiBPerSecond": 5.2293869067685845
+    },
+    {
+      "at": "2026-09-30T21:55:09.0899845+00:00",
+      "process": {
+        "at": "2026-09-30T21:55:09.0899845+00:00",
+        "managedHeapBytes": 25560936,
+        "workingSetBytes": 118755328,
+        "totalProcessorMilliseconds": 263359.375,
+        "rootBytes": 49155296,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 87158,
+      "integrityChecks": 56476,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 40.547453223923526,
+      "transferMiBPerSecond": 6.202459354724995
+    },
+    {
+      "at": "2026-09-30T21:56:09.5238534+00:00",
+      "process": {
+        "at": "2026-09-30T21:56:09.5238534+00:00",
+        "managedHeapBytes": 21435216,
+        "workingSetBytes": 120037376,
+        "totalProcessorMilliseconds": 271500,
+        "rootBytes": 53153034,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 89516,
+      "integrityChecks": 58008,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.017856094928916,
+      "transferMiBPerSecond": 5.612138357685371
+    },
+    {
+      "at": "2026-09-30T21:57:09.676851+00:00",
+      "process": {
+        "at": "2026-09-30T21:57:09.676851+00:00",
+        "managedHeapBytes": 20836872,
+        "workingSetBytes": 119369728,
+        "totalProcessorMilliseconds": 278125,
+        "rootBytes": 48368906,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 91815,
+      "integrityChecks": 59495,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.21920921194458,
+      "transferMiBPerSecond": 5.212841841522584
+    },
+    {
+      "at": "2026-09-30T21:58:10.1003867+00:00",
+      "process": {
+        "at": "2026-09-30T21:58:10.1003867+00:00",
+        "managedHeapBytes": 22762496,
+        "workingSetBytes": 118177792,
+        "totalProcessorMilliseconds": 285546.875,
+        "rootBytes": 49810698,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 94135,
+      "integrityChecks": 60998,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.39563463347611,
+      "transferMiBPerSecond": 5.202184125337968
+    },
+    {
+      "at": "2026-09-30T21:59:10.3780758+00:00",
+      "process": {
+        "at": "2026-09-30T21:59:10.3780758+00:00",
+        "managedHeapBytes": 23770392,
+        "workingSetBytes": 119484416,
+        "totalProcessorMilliseconds": 291890.625,
+        "rootBytes": 29035744,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 96486,
+      "integrityChecks": 62523,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.00282235604151,
+      "transferMiBPerSecond": 5.23260377629241
+    },
+    {
+      "at": "2026-09-30T22:00:10.7490568+00:00",
+      "process": {
+        "at": "2026-09-30T22:00:10.7490568+00:00",
+        "managedHeapBytes": 23882192,
+        "workingSetBytes": 119418880,
+        "totalProcessorMilliseconds": 299265.625,
+        "rootBytes": 29560032,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 98803,
+      "integrityChecks": 64025,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.37936640453134,
+      "transferMiBPerSecond": 5.204634727839811
+    },
+    {
+      "at": "2026-09-30T22:01:11.0224377+00:00",
+      "process": {
+        "at": "2026-09-30T22:01:11.0224377+00:00",
+        "managedHeapBytes": 25338944,
+        "workingSetBytes": 119549952,
+        "totalProcessorMilliseconds": 305609.375,
+        "rootBytes": 20712672,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 101084,
+      "integrityChecks": 65504,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.844235148919616,
+      "transferMiBPerSecond": 5.19303300824606
+    },
+    {
+      "at": "2026-09-30T22:02:11.3496224+00:00",
+      "process": {
+        "at": "2026-09-30T22:02:11.3496224+00:00",
+        "managedHeapBytes": 23214272,
+        "workingSetBytes": 119517184,
+        "totalProcessorMilliseconds": 311906.25,
+        "rootBytes": 21499146,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 103432,
+      "integrityChecks": 67029,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.92109356132444,
+      "transferMiBPerSecond": 5.224167599724272
+    },
+    {
+      "at": "2026-09-30T22:03:11.5969346+00:00",
+      "process": {
+        "at": "2026-09-30T22:03:11.5969346+00:00",
+        "managedHeapBytes": 21343112,
+        "workingSetBytes": 118710272,
+        "totalProcessorMilliseconds": 319171.875,
+        "rootBytes": 23465226,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 105872,
+      "integrityChecks": 68609,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 40.4997320361787,
+      "transferMiBPerSecond": 5.2866919397171594
+    },
+    {
+      "at": "2026-09-30T22:04:12.0073476+00:00",
+      "process": {
+        "at": "2026-09-30T22:04:12.0073476+00:00",
+        "managedHeapBytes": 23466032,
+        "workingSetBytes": 119500800,
+        "totalProcessorMilliseconds": 326562.5,
+        "rootBytes": 21499146,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 108128,
+      "integrityChecks": 70072,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.34455515144384,
+      "transferMiBPerSecond": 5.166624374716334
+    },
+    {
+      "at": "2026-09-30T22:05:12.4644781+00:00",
+      "process": {
+        "at": "2026-09-30T22:05:12.4644781+00:00",
+        "managedHeapBytes": 26739248,
+        "workingSetBytes": 119738368,
+        "totalProcessorMilliseconds": 333562.5,
+        "rootBytes": 50662645,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 110493,
+      "integrityChecks": 71606,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.11862803346249,
+      "transferMiBPerSecond": 6.137283241957898
+    },
+    {
+      "at": "2026-09-30T22:06:12.9574307+00:00",
+      "process": {
+        "at": "2026-09-30T22:06:12.9574307+00:00",
+        "managedHeapBytes": 22715664,
+        "workingSetBytes": 119185408,
+        "totalProcessorMilliseconds": 341015.625,
+        "rootBytes": 44502282,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 112870,
+      "integrityChecks": 73148,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.293833377873504,
+      "transferMiBPerSecond": 5.619123456190085
+    },
+    {
+      "at": "2026-09-30T22:07:13.2096108+00:00",
+      "process": {
+        "at": "2026-09-30T22:07:13.2096108+00:00",
+        "managedHeapBytes": 23022784,
+        "workingSetBytes": 119201792,
+        "totalProcessorMilliseconds": 348156.25,
+        "rootBytes": 54205727,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 115067,
+      "integrityChecks": 74573,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.46341088992396,
+      "transferMiBPerSecond": 5.148661192545688
+    },
+    {
+      "at": "2026-09-30T22:08:13.5209168+00:00",
+      "process": {
+        "at": "2026-09-30T22:08:13.5209168+00:00",
+        "managedHeapBytes": 24458616,
+        "workingSetBytes": 118149120,
+        "totalProcessorMilliseconds": 354562.5,
+        "rootBytes": 42536160,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 117276,
+      "integrityChecks": 76004,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.626631829196334,
+      "transferMiBPerSecond": 4.62754573029149
+    },
+    {
+      "at": "2026-09-30T22:09:14.1771852+00:00",
+      "process": {
+        "at": "2026-09-30T22:09:14.1771852+00:00",
+        "managedHeapBytes": 24396528,
+        "workingSetBytes": 118906880,
+        "totalProcessorMilliseconds": 361390.625,
+        "rootBytes": 38014218,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 119532,
+      "integrityChecks": 77466,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.1931880992534,
+      "transferMiBPerSecond": 4.886022831771835
+    },
+    {
+      "at": "2026-09-30T22:10:14.8943799+00:00",
+      "process": {
+        "at": "2026-09-30T22:10:14.8943799+00:00",
+        "managedHeapBytes": 24658296,
+        "workingSetBytes": 119345152,
+        "totalProcessorMilliseconds": 368375,
+        "rootBytes": 28183776,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 121671,
+      "integrityChecks": 78853,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 35.22890032335437,
+      "transferMiBPerSecond": 4.750598956796873
+    },
+    {
+      "at": "2026-09-30T22:11:15.3630944+00:00",
+      "process": {
+        "at": "2026-09-30T22:11:15.3630944+00:00",
+        "managedHeapBytes": 20808664,
+        "workingSetBytes": 121229312,
+        "totalProcessorMilliseconds": 374734.375,
+        "rootBytes": 26807562,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 123927,
+      "integrityChecks": 80315,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.30854903488977,
+      "transferMiBPerSecond": 5.163645508661847
+    },
+    {
+      "at": "2026-09-30T22:12:15.9142369+00:00",
+      "process": {
+        "at": "2026-09-30T22:12:15.9142369+00:00",
+        "managedHeapBytes": 20709416,
+        "workingSetBytes": 119095296,
+        "totalProcessorMilliseconds": 381359.375,
+        "rootBytes": 22154485,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 126160,
+      "integrityChecks": 81762,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.87791687828186,
+      "transferMiBPerSecond": 4.947974464676247
+    },
+    {
+      "at": "2026-09-30T22:13:16.3457269+00:00",
+      "process": {
+        "at": "2026-09-30T22:13:16.3457269+00:00",
+        "managedHeapBytes": 21906712,
+        "workingSetBytes": 119283712,
+        "totalProcessorMilliseconds": 388031.25,
+        "rootBytes": 20974837,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 128306,
+      "integrityChecks": 83155,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 35.51128724444822,
+      "transferMiBPerSecond": 5.103049847275394
+    },
+    {
+      "at": "2026-09-30T22:14:16.6802172+00:00",
+      "process": {
+        "at": "2026-09-30T22:14:16.6802172+00:00",
+        "managedHeapBytes": 20971360,
+        "workingSetBytes": 118956032,
+        "totalProcessorMilliseconds": 395296.875,
+        "rootBytes": 29822218,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 130529,
+      "integrityChecks": 84593,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.84459732644829,
+      "transferMiBPerSecond": 5.157244804524367
+    },
+    {
+      "at": "2026-09-30T22:15:16.884252+00:00",
+      "process": {
+        "at": "2026-09-30T22:15:16.884252+00:00",
+        "managedHeapBytes": 22355376,
+        "workingSetBytes": 119554048,
+        "totalProcessorMilliseconds": 401937.5,
+        "rootBytes": 29494538,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 132723,
+      "integrityChecks": 86018,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 36.442740213152625,
+      "transferMiBPerSecond": 5.146550435212107
+    },
+    {
+      "at": "2026-09-30T22:16:17.3066+00:00",
+      "process": {
+        "at": "2026-09-30T22:16:17.3066+00:00",
+        "managedHeapBytes": 21531064,
+        "workingSetBytes": 119930880,
+        "totalProcessorMilliseconds": 410109.375,
+        "rootBytes": 30215434,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 135052,
+      "integrityChecks": 87526,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 38.545340872883656,
+      "transferMiBPerSecond": 5.208492695704775
+    },
+    {
+      "at": "2026-09-30T22:17:17.6210562+00:00",
+      "process": {
+        "at": "2026-09-30T22:17:17.6210562+00:00",
+        "managedHeapBytes": 20691432,
+        "workingSetBytes": 119672832,
+        "totalProcessorMilliseconds": 416421.875,
+        "rootBytes": 25103626,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 137311,
+      "integrityChecks": 88991,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.453707491107245,
+      "transferMiBPerSecond": 5.175940842449604
+    },
+    {
+      "at": "2026-09-30T22:18:18.0130327+00:00",
+      "process": {
+        "at": "2026-09-30T22:18:18.0130327+00:00",
+        "managedHeapBytes": 21603432,
+        "workingSetBytes": 119803904,
+        "totalProcessorMilliseconds": 423828.125,
+        "rootBytes": 31001866,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 139574,
+      "integrityChecks": 90455,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.47186515745184,
+      "transferMiBPerSecond": 5.173312028749502
+    },
+    {
+      "at": "2026-09-30T22:19:18.3505843+00:00",
+      "process": {
+        "at": "2026-09-30T22:19:18.3505843+00:00",
+        "managedHeapBytes": 21772016,
+        "workingSetBytes": 120197120,
+        "totalProcessorMilliseconds": 430484.375,
+        "rootBytes": 29756682,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 141835,
+      "integrityChecks": 91922,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.47251819213692,
+      "transferMiBPerSecond": 5.176043243792351
+    },
+    {
+      "at": "2026-09-30T22:20:18.7619845+00:00",
+      "process": {
+        "at": "2026-09-30T22:20:18.7619845+00:00",
+        "managedHeapBytes": 24058224,
+        "workingSetBytes": 120279040,
+        "totalProcessorMilliseconds": 437796.875,
+        "rootBytes": 29953290,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 144085,
+      "integrityChecks": 93380,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.24462589099201,
+      "transferMiBPerSecond": 5.1643339004880175
+    },
+    {
+      "at": "2026-09-30T22:21:18.9187316+00:00",
+      "process": {
+        "at": "2026-09-30T22:21:18.9187316+00:00",
+        "managedHeapBytes": 22723976,
+        "workingSetBytes": 119459840,
+        "totalProcessorMilliseconds": 444546.875,
+        "rootBytes": 29101301,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 146223,
+      "integrityChecks": 94766,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 35.54048553266937,
+      "transferMiBPerSecond": 5.121092571231941
+    },
+    {
+      "at": "2026-09-30T22:22:19.414398+00:00",
+      "process": {
+        "at": "2026-09-30T22:22:19.414398+00:00",
+        "managedHeapBytes": 22462880,
+        "workingSetBytes": 119250944,
+        "totalProcessorMilliseconds": 451375,
+        "rootBytes": 30477578,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 148632,
+      "integrityChecks": 96326,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 39.821034188987795,
+      "transferMiBPerSecond": 5.247152038929853
+    },
+    {
+      "at": "2026-09-30T22:23:19.80414+00:00",
+      "process": {
+        "at": "2026-09-30T22:23:19.80414+00:00",
+        "managedHeapBytes": 25188344,
+        "workingSetBytes": 119128064,
+        "totalProcessorMilliseconds": 457671.875,
+        "rootBytes": 29297930,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 150917,
+      "integrityChecks": 97809,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 37.83755194715023,
+      "transferMiBPerSecond": 5.184190931297971
+    },
+    {
+      "at": "2026-09-30T22:24:20.55521+00:00",
+      "process": {
+        "at": "2026-09-30T22:24:20.55521+00:00",
+        "managedHeapBytes": 22668208,
+        "workingSetBytes": 119304192,
+        "totalProcessorMilliseconds": 461500,
+        "rootBytes": 30674165,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 151886,
+      "integrityChecks": 98438,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 15.950336347985312,
+      "transferMiBPerSecond": 2.8032618833714253
+    },
+    {
+      "at": "2026-09-30T22:25:21.9612492+00:00",
+      "process": {
+        "at": "2026-09-30T22:25:21.9612492+00:00",
+        "managedHeapBytes": 20178592,
+        "workingSetBytes": 120143872,
+        "totalProcessorMilliseconds": 466859.375,
+        "rootBytes": 41946357,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 153348,
+      "integrityChecks": 99381,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 23.808733131903416,
+      "transferMiBPerSecond": 3.046517787504252
+    },
+    {
+      "at": "2026-09-30T22:26:22.2844567+00:00",
+      "process": {
+        "at": "2026-09-30T22:26:22.2844567+00:00",
+        "managedHeapBytes": 21730472,
+        "workingSetBytes": 120266752,
+        "totalProcessorMilliseconds": 474828.125,
+        "rootBytes": 29232352,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 155494,
+      "integrityChecks": 100773,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 35.575031384065575,
+      "transferMiBPerSecond": 4.459475829231459
+    },
+    {
+      "at": "2026-09-30T22:27:22.5732171+00:00",
+      "process": {
+        "at": "2026-09-30T22:27:22.5732171+00:00",
+        "managedHeapBytes": 20313000,
+        "workingSetBytes": 119943168,
+        "totalProcessorMilliseconds": 478734.375,
+        "rootBytes": 21630176,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 156702,
+      "integrityChecks": 101553,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 20.036902268105017,
+      "transferMiBPerSecond": 2.959163982848326
+    },
+    {
+      "at": "2026-09-30T22:28:24.5049914+00:00",
+      "process": {
+        "at": "2026-09-30T22:28:24.5049914+00:00",
+        "managedHeapBytes": 20507168,
+        "workingSetBytes": 119959552,
+        "totalProcessorMilliseconds": 481437.5,
+        "rootBytes": 22482144,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 157463,
+      "integrityChecks": 102041,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 12.287715128484539,
+      "transferMiBPerSecond": 1.8702368186683906
+    },
+    {
+      "at": "2026-09-30T22:29:25.366811+00:00",
+      "process": {
+        "at": "2026-09-30T22:29:25.366811+00:00",
+        "managedHeapBytes": 18042056,
+        "workingSetBytes": 119955456,
+        "totalProcessorMilliseconds": 484031.25,
+        "rootBytes": 18746571,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 158194,
+      "integrityChecks": 102510,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 12.01081408351452,
+      "transferMiBPerSecond": 1.5014510894033755
+    },
+    {
+      "at": "2026-09-30T22:30:28.0297767+00:00",
+      "process": {
+        "at": "2026-09-30T22:30:28.0297767+00:00",
+        "managedHeapBytes": 19333808,
+        "workingSetBytes": 119418880,
+        "totalProcessorMilliseconds": 486296.875,
+        "rootBytes": 18549942,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 158844,
+      "integrityChecks": 102929,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 10.37295303117133,
+      "transferMiBPerSecond": 1.603386676076268
+    },
+    {
+      "at": "2026-09-30T22:31:29.1632419+00:00",
+      "process": {
+        "at": "2026-09-30T22:31:29.1632419+00:00",
+        "managedHeapBytes": 18507648,
+        "workingSetBytes": 119775232,
+        "totalProcessorMilliseconds": 488859.375,
+        "rootBytes": 19139766,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 159696,
+      "integrityChecks": 103476,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 13.936720210651497,
+      "transferMiBPerSecond": 1.7522697549053627
+    },
+    {
+      "at": "2026-09-30T22:32:30.3113423+00:00",
+      "process": {
+        "at": "2026-09-30T22:32:30.3113423+00:00",
+        "managedHeapBytes": 17793976,
+        "workingSetBytes": 119521280,
+        "totalProcessorMilliseconds": 491140.625,
+        "rootBytes": 18353334,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 160337,
+      "integrityChecks": 103890,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 10.482745920264108,
+      "transferMiBPerSecond": 1.637930672039796
+    },
+    {
+      "at": "2026-09-30T22:33:32.2864963+00:00",
+      "process": {
+        "at": "2026-09-30T22:33:32.2864963+00:00",
+        "managedHeapBytes": 18936592,
+        "workingSetBytes": 119508992,
+        "totalProcessorMilliseconds": 491890.625,
+        "rootBytes": 25627851,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 160554,
+      "integrityChecks": 104027,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 3.5014031590788783,
+      "transferMiBPerSecond": 0.433089752387491
+    },
+    {
+      "at": "2026-09-30T22:34:34.7428079+00:00",
+      "process": {
+        "at": "2026-09-30T22:34:34.7428079+00:00",
+        "managedHeapBytes": 16306448,
+        "workingSetBytes": 119521280,
+        "totalProcessorMilliseconds": 493125,
+        "rootBytes": 38145206,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 160874,
+      "integrityChecks": 104230,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 5.123581457218169,
+      "transferMiBPerSecond": 0.8008096096020906
+    },
+    {
+      "at": "2026-09-30T22:35:35.707589+00:00",
+      "process": {
+        "at": "2026-09-30T22:35:35.707589+00:00",
+        "managedHeapBytes": 17842736,
+        "workingSetBytes": 120852480,
+        "totalProcessorMilliseconds": 496500,
+        "rootBytes": 19860683,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 161983,
+      "integrityChecks": 104946,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 18.190830508862433,
+      "transferMiBPerSecond": 2.224319715106679
+    },
+    {
+      "at": "2026-09-30T22:36:37.1918128+00:00",
+      "process": {
+        "at": "2026-09-30T22:36:37.1918128+00:00",
+        "managedHeapBytes": 18735744,
+        "workingSetBytes": 120672256,
+        "totalProcessorMilliseconds": 500796.875,
+        "rootBytes": 28576950,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 163114,
+      "integrityChecks": 105675,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 18.394962644059596,
+      "transferMiBPerSecond": 2.216974171495999
+    },
+    {
+      "at": "2026-09-30T22:37:37.7891574+00:00",
+      "process": {
+        "at": "2026-09-30T22:37:37.7891574+00:00",
+        "managedHeapBytes": 20950400,
+        "workingSetBytes": 120655872,
+        "totalProcessorMilliseconds": 504265.625,
+        "rootBytes": 27462901,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 164080,
+      "integrityChecks": 106301,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 15.94129258264561,
+      "transferMiBPerSecond": 2.8062476999203247
+    },
+    {
+      "at": "2026-09-30T22:38:38.627183+00:00",
+      "process": {
+        "at": "2026-09-30T22:38:38.627183+00:00",
+        "managedHeapBytes": 19046088,
+        "workingSetBytes": 120426496,
+        "totalProcessorMilliseconds": 508187.5,
+        "rootBytes": 18943200,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 165212,
+      "integrityChecks": 107032,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 18.606783978209837,
+      "transferMiBPerSecond": 2.2405223509791257
+    },
+    {
+      "at": "2026-09-30T22:39:39.2341421+00:00",
+      "process": {
+        "at": "2026-09-30T22:39:39.2341421+00:00",
+        "managedHeapBytes": 18961680,
+        "workingSetBytes": 120414208,
+        "totalProcessorMilliseconds": 511765.625,
+        "rootBytes": 30674165,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 166297,
+      "integrityChecks": 107731,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 17.90223459668677,
+      "transferMiBPerSecond": 2.87358329705779
+    },
+    {
+      "at": "2026-09-30T22:40:39.863525+00:00",
+      "process": {
+        "at": "2026-09-30T22:40:39.863525+00:00",
+        "managedHeapBytes": 22779824,
+        "workingSetBytes": 120467456,
+        "totalProcessorMilliseconds": 515500,
+        "rootBytes": 28052746,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 167428,
+      "integrityChecks": 108461,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 18.654321484113275,
+      "transferMiBPerSecond": 2.248232616371232
+    },
+    {
+      "at": "2026-09-30T22:41:40.0859472+00:00",
+      "process": {
+        "at": "2026-09-30T22:41:40.0859472+00:00",
+        "managedHeapBytes": 23301032,
+        "workingSetBytes": 120266752,
+        "totalProcessorMilliseconds": 521765.625,
+        "rootBytes": 35917066,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 169343,
+      "integrityChecks": 109701,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 31.798787395834772,
+      "transferMiBPerSecond": 4.667592372741653
+    },
+    {
+      "at": "2026-09-30T22:42:40.3319513+00:00",
+      "process": {
+        "at": "2026-09-30T22:42:40.3319513+00:00",
+        "managedHeapBytes": 22855120,
+        "workingSetBytes": 120274944,
+        "totalProcessorMilliseconds": 528031.25,
+        "rootBytes": 28642549,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 171284,
+      "integrityChecks": 110960,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 32.217904390442385,
+      "transferMiBPerSecond": 4.022714704997549
+    },
+    {
+      "at": "2026-09-30T22:43:40.873915+00:00",
+      "process": {
+        "at": "2026-09-30T22:43:40.873915+00:00",
+        "managedHeapBytes": 23065992,
+        "workingSetBytes": 120659968,
+        "totalProcessorMilliseconds": 534000,
+        "rootBytes": 27528458,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 173114,
+      "integrityChecks": 112145,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 30.226968009628667,
+      "transferMiBPerSecond": 4.592786168373802
+    },
+    {
+      "at": "2026-09-30T22:44:41.6106818+00:00",
+      "process": {
+        "at": "2026-09-30T22:44:41.6106818+00:00",
+        "managedHeapBytes": 19459400,
+        "workingSetBytes": 120172544,
+        "totalProcessorMilliseconds": 538750,
+        "rootBytes": 40307978,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 174584,
+      "integrityChecks": 113096,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 24.202802971724864,
+      "transferMiBPerSecond": 3.4073957918624647
+    },
+    {
+      "at": "2026-09-30T22:45:42.7472652+00:00",
+      "process": {
+        "at": "2026-09-30T22:45:42.7472652+00:00",
+        "managedHeapBytes": 19378856,
+        "workingSetBytes": 120848384,
+        "totalProcessorMilliseconds": 541734.375,
+        "rootBytes": 27200715,
+        "stagingFiles": 4,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 175204,
+      "integrityChecks": 113493,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 10.141227486389107,
+      "transferMiBPerSecond": 1.1759555365061471
+    },
+    {
+      "at": "2026-09-30T22:46:43.9262515+00:00",
+      "process": {
+        "at": "2026-09-30T22:46:43.9262515+00:00",
+        "managedHeapBytes": 17138728,
+        "workingSetBytes": 120619008,
+        "totalProcessorMilliseconds": 544968.75,
+        "rootBytes": 31526133,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 176156,
+      "integrityChecks": 114106,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 15.560898562976027,
+      "transferMiBPerSecond": 2.2583490338172685
+    },
+    {
+      "at": "2026-09-30T22:47:44.2140343+00:00",
+      "process": {
+        "at": "2026-09-30T22:47:44.2140343+00:00",
+        "managedHeapBytes": 17343704,
+        "workingSetBytes": 120541184,
+        "totalProcessorMilliseconds": 548359.375,
+        "rootBytes": 26479819,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 176893,
+      "integrityChecks": 114583,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 12.22469903139314,
+      "transferMiBPerSecond": 1.5832734271163063
+    },
+    {
+      "at": "2026-09-30T22:48:45.0379345+00:00",
+      "process": {
+        "at": "2026-09-30T22:48:45.0379345+00:00",
+        "managedHeapBytes": 19369224,
+        "workingSetBytes": 120500224,
+        "totalProcessorMilliseconds": 551812.5,
+        "rootBytes": 22416587,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 177717,
+      "integrityChecks": 115113,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 13.547306195270918,
+      "transferMiBPerSecond": 1.8781782082060203
+    },
+    {
+      "at": "2026-09-30T22:49:45.738088+00:00",
+      "process": {
+        "at": "2026-09-30T22:49:45.738088+00:00",
+        "managedHeapBytes": 19942920,
+        "workingSetBytes": 120512512,
+        "totalProcessorMilliseconds": 554859.375,
+        "rootBytes": 25824438,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 178432,
+      "integrityChecks": 115572,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 11.779212386999976,
+      "transferMiBPerSecond": 1.5598327588785157
+    },
+    {
+      "at": "2026-09-30T22:50:47.063098+00:00",
+      "process": {
+        "at": "2026-09-30T22:50:47.063098+00:00",
+        "managedHeapBytes": 19058352,
+        "workingSetBytes": 120377344,
+        "totalProcessorMilliseconds": 559093.75,
+        "rootBytes": 21892320,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 179270,
+      "integrityChecks": 116114,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 13.664897894023989,
+      "transferMiBPerSecond": 1.8680099196886375
+    },
+    {
+      "at": "2026-09-30T22:51:48.5304738+00:00",
+      "process": {
+        "at": "2026-09-30T22:51:48.5304738+00:00",
+        "managedHeapBytes": 21958488,
+        "workingSetBytes": 120287232,
+        "totalProcessorMilliseconds": 562000,
+        "rootBytes": 18615499,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 179929,
+      "integrityChecks": 116532,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 10.72113444608774,
+      "transferMiBPerSecond": 1.3182815773925982
+    },
+    {
+      "at": "2026-09-30T22:52:50.3858484+00:00",
+      "process": {
+        "at": "2026-09-30T22:52:50.3858484+00:00",
+        "managedHeapBytes": 19511152,
+        "workingSetBytes": 119738368,
+        "totalProcessorMilliseconds": 564593.75,
+        "rootBytes": 22613195,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 180570,
+      "integrityChecks": 116945,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 10.362882839933524,
+      "transferMiBPerSecond": 1.6171812042041842
+    },
+    {
+      "at": "2026-09-30T22:53:51.4322518+00:00",
+      "process": {
+        "at": "2026-09-30T22:53:51.4322518+00:00",
+        "managedHeapBytes": 18380512,
+        "workingSetBytes": 119078912,
+        "totalProcessorMilliseconds": 566218.75,
+        "rootBytes": 21957814,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 180938,
+      "integrityChecks": 117178,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 6.02820116344479,
+      "transferMiBPerSecond": 0.6517273571705442
+    },
+    {
+      "at": "2026-09-30T22:54:52.9318446+00:00",
+      "process": {
+        "at": "2026-09-30T22:54:52.9318446+00:00",
+        "managedHeapBytes": 18017896,
+        "workingSetBytes": 112128000,
+        "totalProcessorMilliseconds": 569203.125,
+        "rootBytes": 26348768,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 181552,
+      "integrityChecks": 117571,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 9.983805941557389,
+      "transferMiBPerSecond": 1.4860299816798437
+    },
+    {
+      "at": "2026-09-30T22:55:53.484249+00:00",
+      "process": {
+        "at": "2026-09-30T22:55:53.484249+00:00",
+        "managedHeapBytes": 19897712,
+        "workingSetBytes": 112545792,
+        "totalProcessorMilliseconds": 572218.75,
+        "rootBytes": 19467467,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10827455
+      },
+      "completedOperations": 182430,
+      "integrityChecks": 118138,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 14.499837103082896,
+      "transferMiBPerSecond": 1.7857405066066918
+    },
+    {
+      "at": "2026-09-30T22:56:56.0723288+00:00",
+      "process": {
+        "at": "2026-09-30T22:56:56.0723288+00:00",
+        "managedHeapBytes": 21703784,
+        "workingSetBytes": 112177152,
+        "totalProcessorMilliseconds": 579187.5,
+        "rootBytes": 41291018,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10860223
+      },
+      "completedOperations": 184296,
+      "integrityChecks": 119345,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 29.813983844252718,
+      "transferMiBPerSecond": 4.459880138628131
+    },
+    {
+      "at": "2026-09-30T22:57:56.5630471+00:00",
+      "process": {
+        "at": "2026-09-30T22:57:56.5630471+00:00",
+        "managedHeapBytes": 19465304,
+        "workingSetBytes": 110383104,
+        "totalProcessorMilliseconds": 587125,
+        "rootBytes": 38669536,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10852031
+      },
+      "completedOperations": 186392,
+      "integrityChecks": 120704,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 34.649943973305405,
+      "transferMiBPerSecond": 4.420889209782501
+    },
+    {
+      "at": "2026-09-30T22:58:57.2847628+00:00",
+      "process": {
+        "at": "2026-09-30T22:58:57.2847628+00:00",
+        "managedHeapBytes": 24616032,
+        "workingSetBytes": 111484928,
+        "totalProcessorMilliseconds": 594359.375,
+        "rootBytes": 24775904,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 188286,
+      "integrityChecks": 121933,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 31.19147702211583,
+      "transferMiBPerSecond": 4.488000095440873
+    },
+    {
+      "at": "2026-09-30T22:59:57.7871058+00:00",
+      "process": {
+        "at": "2026-09-30T22:59:57.7871058+00:00",
+        "managedHeapBytes": 20540616,
+        "workingSetBytes": 108158976,
+        "totalProcessorMilliseconds": 597593.75,
+        "rootBytes": 26938634,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 189113,
+      "integrityChecks": 122468,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 13.668892128689958,
+      "transferMiBPerSecond": 1.8912070354256032
+    },
+    {
+      "at": "2026-09-30T23:01:02.6887651+00:00",
+      "process": {
+        "at": "2026-09-30T23:01:02.6887651+00:00",
+        "managedHeapBytes": 18920168,
+        "workingSetBytes": 108916736,
+        "totalProcessorMilliseconds": 601343.75,
+        "rootBytes": 32836832,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10843839
+      },
+      "completedOperations": 190169,
+      "integrityChecks": 123149,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 16.270770445463786,
+      "transferMiBPerSecond": 2.2423118155885855
+    },
+    {
+      "at": "2026-09-30T23:02:03.3681163+00:00",
+      "process": {
+        "at": "2026-09-30T23:02:03.3681163+00:00",
+        "managedHeapBytes": 19572128,
+        "workingSetBytes": 109064192,
+        "totalProcessorMilliseconds": 604656.25,
+        "rootBytes": 22088928,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 190968,
+      "integrityChecks": 123665,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 13.167576518187953,
+      "transferMiBPerSecond": 1.7361423119886032
+    },
+    {
+      "at": "2026-09-30T23:03:04.8308373+00:00",
+      "process": {
+        "at": "2026-09-30T23:03:04.8308373+00:00",
+        "managedHeapBytes": 21496536,
+        "workingSetBytes": 108654592,
+        "totalProcessorMilliseconds": 608000,
+        "rootBytes": 33230069,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 192056,
+      "integrityChecks": 124364,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 17.701787071874023,
+      "transferMiBPerSecond": 2.645447152165044
+    },
+    {
+      "at": "2026-09-30T23:04:05.140348+00:00",
+      "process": {
+        "at": "2026-09-30T23:04:05.140348+00:00",
+        "managedHeapBytes": 21032680,
+        "workingSetBytes": 108978176,
+        "totalProcessorMilliseconds": 614203.125,
+        "rootBytes": 38735114,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 193994,
+      "integrityChecks": 125618,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 32.13423517296087,
+      "transferMiBPerSecond": 4.341807302061896
+    },
+    {
+      "at": "2026-09-30T23:05:05.4857823+00:00",
+      "process": {
+        "at": "2026-09-30T23:05:05.4857823+00:00",
+        "managedHeapBytes": 19242992,
+        "workingSetBytes": 108195840,
+        "totalProcessorMilliseconds": 621281.25,
+        "rootBytes": 24186080,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 195732,
+      "integrityChecks": 126745,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 28.800853290072354,
+      "transferMiBPerSecond": 3.9058897747338066
+    },
+    {
+      "at": "2026-09-30T23:06:05.8802066+00:00",
+      "process": {
+        "at": "2026-09-30T23:06:05.8802066+00:00",
+        "managedHeapBytes": 24131984,
+        "workingSetBytes": 108843008,
+        "totalProcessorMilliseconds": 625828.125,
+        "rootBytes": 37358795,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 196961,
+      "integrityChecks": 127539,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 20.349560646445305,
+      "transferMiBPerSecond": 2.8340870594836716
+    },
+    {
+      "at": "2026-09-30T23:07:06.7174113+00:00",
+      "process": {
+        "at": "2026-09-30T23:07:06.7174113+00:00",
+        "managedHeapBytes": 21472688,
+        "workingSetBytes": 108097536,
+        "totalProcessorMilliseconds": 633046.875,
+        "rootBytes": 25234656,
+        "stagingFiles": 2,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 198852,
+      "integrityChecks": 128764,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 31.082953421757065,
+      "transferMiBPerSecond": 4.218474094433528
+    },
+    {
+      "at": "2026-09-30T23:08:07.5631552+00:00",
+      "process": {
+        "at": "2026-09-30T23:08:07.5631552+00:00",
+        "managedHeapBytes": 21411896,
+        "workingSetBytes": 107835392,
+        "totalProcessorMilliseconds": 639109.375,
+        "rootBytes": 19139787,
+        "stagingFiles": 3,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 200307,
+      "integrityChecks": 129706,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 23.912929758756718,
+      "transferMiBPerSecond": 3.2615879619803607
+    },
+    {
+      "at": "2026-09-30T23:09:08.6384127+00:00",
+      "process": {
+        "at": "2026-09-30T23:09:08.6384127+00:00",
+        "managedHeapBytes": 19900616,
+        "workingSetBytes": 107888640,
+        "totalProcessorMilliseconds": 642578.125,
+        "rootBytes": 19991755,
+        "stagingFiles": 1,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 201096,
+      "integrityChecks": 130213,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 12.918488309279745,
+      "transferMiBPerSecond": 1.7207159102848264
+    },
+    {
+      "at": "2026-09-30T23:10:09.4011635+00:00",
+      "process": {
+        "at": "2026-09-30T23:10:09.4011635+00:00",
+        "managedHeapBytes": 22655664,
+        "workingSetBytes": 107171840,
+        "totalProcessorMilliseconds": 651062.5,
+        "rootBytes": 44502282,
+        "stagingFiles": 0,
+        "databaseConnections": 1,
+        "maxDatabaseConnections": 100,
+        "databaseBytes": 10835647
+      },
+      "completedOperations": 203057,
+      "integrityChecks": 131484,
+      "unexpectedFailures": 0,
+      "retries": 0,
+      "operationsPerSecond": 32.273061607342505,
+      "transferMiBPerSecond": 4.97094507657487
+    }
+  ],
+  "sourceReconciliation": {
+    "referencedBlobs": 16,
+    "physicalBlobs": 16,
+    "missingBlobs": 0,
+    "unreferencedBlobs": 0,
+    "stagingFiles": 0
+  },
+  "restoredReconciliation": {
+    "referencedBlobs": 16,
+    "physicalBlobs": 16,
+    "missingBlobs": 0,
+    "unreferencedBlobs": 0,
+    "stagingFiles": 0
+  },
+  "backup": {
+    "manifestObjectCount": 16,
+    "validatedObjectCount": 16,
+    "backupSetId": "e817e4b1b92345fcae7e9e48dfa2d7f0"
+  },
+  "inconsistentBackupRejected": true,
+  "restartVerified": true,
+  "restoreVerified": true,
+  "originalVerifiedAfterRestore": true,
+  "cleanedOwnedResources": true,
+  "terminalError": null,
+  "passed": true
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-10-01T00:58:00Z",
+  "scope": "isolated local direct-Kestrel TLS only",
+  "image": "sha256:ed51fa14ec1fdaec2aa615fa3313c4f986d27806b3b6059bc5ff4aeddfa178b3",
+  "endpoint": "https://localhost:5196/s3",
+  "networkTopology": "Windows client to Docker Desktop published loopback port to Kestrel TLS; no reverse proxy",
+  "certificate": {
+    "subject": "CN=localhost",
+    "thumbprintSha1": "82A039BEF00DEA5753CBB9578A3C54D8E1E35A7F",
+    "sha256": "F75C9BD37C5CAFAA3AC18ED54ED800938BAC44B9C45FFE3DACBE0600936A9219",
+    "notBeforeUtc": "2026-06-15T18:31:32Z",
+    "notAfterUtc": "2027-06-15T18:31:32Z",
+    "trust": "existing CurrentUser trusted ASP.NET Core development certificate; CLI used matching public PEM as AWS_CA_BUNDLE",
+    "privateKeyPersistedInRepositoryOrEvidence": false
+  },
+  "clients": {
+    "awsCli": "2.37.6",
+    "awsSdkPackage": "AWSSDK.S3 4.0.103.4",
+    "certificateValidationEnabled": true,
+    "insecureBypassUsed": false,
+    "retries": 0
+  },
+  "checks": {
+    "readiness": "passed",
+    "cliPutHeadMetadataSpecialKeyListRangeHashGetDelete": "passed",
+    "sdkPutHeadListRangeHashGetDelete": "passed; 280 measured network requests and 390 timing samples",
+    "signatureHostAndPath": "passed for direct Kestrel TLS at host localhost and base path /s3",
+    "untrustedForwardedHost": "passed; attacker.invalid injected into valid SDK requests and ignored with no KnownProxies configured",
+    "invalidCredential": "denied; CLI exit 254",
+    "oversizeUpload": "denied; 67,108,865 bytes, CLI exit 254",
+    "activeOperationsAfter": 0,
+    "rejectionsRecorded": 1
+  },
+  "assemblyHashesUnchanged": true,
+  "resourcesCleaned": true,
+  "notValidated": ["intended DNS", "public certificate", "reverse proxy termination", "Cloudflare", "public exposure", "intended server"]
+}

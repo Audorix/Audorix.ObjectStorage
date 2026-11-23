@@ -1,0 +1,206 @@
+{
+  "recordedAtUtc": "2026-10-01T00:56:28.6616915+00:00",
+  "options": {
+    "Endpoint": "https://localhost:5196",
+    "Bucket": "fifteenth-tls",
+    "Warmup": 5,
+    "Samples": 50,
+    "SmallBytes": 65536,
+    "ListObjects": 100,
+    "ListPageSize": 25,
+    "ListPasses": 5,
+    "LargeBytes": 1048576,
+    "LargeSamples": 5,
+    "Concurrency": 1,
+    "ForwardedHost": "attacker.invalid",
+    "Output": "docs/fifteenth-tls-sdk-summary.json"
+  },
+  "sdk": {
+    "name": "AWSSDK.S3",
+    "version": "4.0.0.0",
+    "persistentClients": 1,
+    "maxErrorRetry": 0,
+    "requestChecksumCalculation": "WHEN_REQUIRED",
+    "responseChecksumValidation": "WHEN_REQUIRED"
+  },
+  "semantics": {
+    "headers": "time until SDK returns response headers",
+    "body": "time to consume and integrity-check the response body after headers",
+    "endToEnd": "time from SDK invocation through complete verified body",
+    "measuredNetworkRequests": "requests with operation-level timing; excludes warm-up, list-fixture creation, and cleanup",
+    "forwardedHostProbe": "attacker.invalid"
+  },
+  "totals": {
+    "uploadedBytes": 8519680,
+    "downloadedBytes": 8724480,
+    "errors": 0,
+    "retries": 0,
+    "measuredNetworkRequests": 280,
+    "measuredTimingSamples": 390,
+    "warmupNetworkRequests": 15,
+    "listFixturePutRequests": 100
+  },
+  "throughput": {
+    "measurementWallSeconds": 2.054471,
+    "uploadMiBPerSecond": 17.016882842165014,
+    "downloadMiBPerSecond": 21.870390994784163
+  },
+  "resources": {
+    "before": {
+      "AtUtc": "2026-10-01T00:56:23.8013672+00:00",
+      "ClientWorkingSetBytes": 54644736,
+      "ClientManagedHeapBytes": 673592,
+      "ClientCpuMilliseconds": 281.25,
+      "ServerWorkingSetBytes": 119029760,
+      "ServerManagedHeapBytes": 3573216,
+      "ServerFreeDiskBytes": 902487797760,
+      "ServerStagingFiles": 0
+    },
+    "after": {
+      "AtUtc": "2026-10-01T00:56:28.640399+00:00",
+      "ClientWorkingSetBytes": 84123648,
+      "ClientManagedHeapBytes": 8310496,
+      "ClientCpuMilliseconds": 1609.375,
+      "ServerWorkingSetBytes": 128954368,
+      "ServerManagedHeapBytes": 9181408,
+      "ServerFreeDiskBytes": 902477754368,
+      "ServerStagingFiles": 0
+    },
+    "clientCpuMilliseconds": 1328.125
+  },
+  "operations": [
+    {
+      "Operation": "large-get-body",
+      "Count": 5,
+      "MinimumMilliseconds": 5.9973,
+      "P50Milliseconds": 6.1379,
+      "P95Milliseconds": 13.4566,
+      "P99Milliseconds": 13.4566,
+      "MaximumMilliseconds": 13.4566,
+      "AverageMilliseconds": 7.61536,
+      "TotalMilliseconds": 38.0768
+    },
+    {
+      "Operation": "large-get-end-to-end",
+      "Count": 5,
+      "MinimumMilliseconds": 9.0859,
+      "P50Milliseconds": 9.4052,
+      "P95Milliseconds": 17.2569,
+      "P99Milliseconds": 17.2569,
+      "MaximumMilliseconds": 17.2569,
+      "AverageMilliseconds": 10.982940000000001,
+      "TotalMilliseconds": 54.9147
+    },
+    {
+      "Operation": "large-get-headers",
+      "Count": 5,
+      "MinimumMilliseconds": 2.9399,
+      "P50Milliseconds": 3.3573,
+      "P95Milliseconds": 3.7922,
+      "P99Milliseconds": 3.7922,
+      "MaximumMilliseconds": 3.7922,
+      "AverageMilliseconds": 3.3601400000000003,
+      "TotalMilliseconds": 16.800700000000003
+    },
+    {
+      "Operation": "large-put-complete",
+      "Count": 5,
+      "MinimumMilliseconds": 14.378,
+      "P50Milliseconds": 16.0137,
+      "P95Milliseconds": 27.1835,
+      "P99Milliseconds": 27.1835,
+      "MaximumMilliseconds": 27.1835,
+      "AverageMilliseconds": 18.28566,
+      "TotalMilliseconds": 91.4283
+    },
+    {
+      "Operation": "list-page",
+      "Count": 20,
+      "MinimumMilliseconds": 2.8449,
+      "P50Milliseconds": 3.9791,
+      "P95Milliseconds": 15.2927,
+      "P99Milliseconds": 28.9875,
+      "MaximumMilliseconds": 28.9875,
+      "AverageMilliseconds": 5.976560000000001,
+      "TotalMilliseconds": 119.53120000000001
+    },
+    {
+      "Operation": "range-4k",
+      "Count": 50,
+      "MinimumMilliseconds": 2.0028,
+      "P50Milliseconds": 2.7252,
+      "P95Milliseconds": 4.7356,
+      "P99Milliseconds": 6.3646,
+      "MaximumMilliseconds": 6.3646,
+      "AverageMilliseconds": 3.1197219999999994,
+      "TotalMilliseconds": 155.98609999999996
+    },
+    {
+      "Operation": "small-delete",
+      "Count": 50,
+      "MinimumMilliseconds": 3.9502,
+      "P50Milliseconds": 4.7968,
+      "P95Milliseconds": 6.1681,
+      "P99Milliseconds": 6.822,
+      "MaximumMilliseconds": 6.822,
+      "AverageMilliseconds": 4.988855999999999,
+      "TotalMilliseconds": 249.44279999999998
+    },
+    {
+      "Operation": "small-get-body",
+      "Count": 50,
+      "MinimumMilliseconds": 0.0695,
+      "P50Milliseconds": 0.1244,
+      "P95Milliseconds": 0.9503,
+      "P99Milliseconds": 2.501,
+      "MaximumMilliseconds": 2.501,
+      "AverageMilliseconds": 0.24052800000000002,
+      "TotalMilliseconds": 12.0264
+    },
+    {
+      "Operation": "small-get-end-to-end",
+      "Count": 50,
+      "MinimumMilliseconds": 2.4177,
+      "P50Milliseconds": 3.1594,
+      "P95Milliseconds": 4.6665,
+      "P99Milliseconds": 5.9989,
+      "MaximumMilliseconds": 5.9989,
+      "AverageMilliseconds": 3.3907299999999996,
+      "TotalMilliseconds": 169.5365
+    },
+    {
+      "Operation": "small-get-headers",
+      "Count": 50,
+      "MinimumMilliseconds": 2.3115,
+      "P50Milliseconds": 2.8555,
+      "P95Milliseconds": 4.4956,
+      "P99Milliseconds": 5.8795,
+      "MaximumMilliseconds": 5.8795,
+      "AverageMilliseconds": 3.1430939999999996,
+      "TotalMilliseconds": 157.1547
+    },
+    {
+      "Operation": "small-head",
+      "Count": 50,
+      "MinimumMilliseconds": 1.6671,
+      "P50Milliseconds": 2.509,
+      "P95Milliseconds": 3.8931,
+      "P99Milliseconds": 6.3287,
+      "MaximumMilliseconds": 6.3287,
+      "AverageMilliseconds": 2.7264840000000006,
+      "TotalMilliseconds": 136.32420000000002
+    },
+    {
+      "Operation": "small-put",
+      "Count": 50,
+      "MinimumMilliseconds": 5.9465,
+      "P50Milliseconds": 7.2898,
+      "P95Milliseconds": 10.8058,
+      "P99Milliseconds": 11.8722,
+      "MaximumMilliseconds": 11.8722,
+      "AverageMilliseconds": 7.720773999999998,
+      "TotalMilliseconds": 386.0386999999999
+    }
+  ],
+  "errorTypes": {}
+}

@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Audorix.ObjectStorage.Api/Audorix.ObjectStorage.Api.csproj" />
+    <Project Path="src/Audorix.ObjectStorage.Host/Audorix.ObjectStorage.Host.csproj" />
+    <Project Path="src/Audorix.ObjectStorage.PostgreSql/Audorix.ObjectStorage.PostgreSql.csproj" />
+    <Project Path="src/Audorix.ObjectStorage.S3/Audorix.ObjectStorage.S3.csproj" />
+    <Project Path="src/Audorix.ObjectStorage/Audorix.ObjectStorage.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Audorix.ObjectStorage.Tests/Audorix.ObjectStorage.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Audorix.ObjectStorage.LoadHarness/Audorix.ObjectStorage.LoadHarness.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/Audorix.ObjectStorage.Demo/Audorix.ObjectStorage.Demo.csproj" />
+  </Folder>
+</Solution>

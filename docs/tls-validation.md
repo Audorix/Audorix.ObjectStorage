@@ -1,0 +1,13 @@
+# Local TLS Validation
+
+The direct-Kestrel TLS profile was validated at `https://localhost:5196/s3` on an isolated Compose project with its own PostgreSQL container, schema, bucket, credentials, blob volume, Data Protection volume, and backup volume. The client connected from Windows through Docker Desktop's loopback publication directly to Kestrel; no reverse proxy was present.
+
+Kestrel used the machine's existing trusted ASP.NET Core `CN=localhost` development certificate, SHA-1 thumbprint `82A039BEF00DEA5753CBB9578A3C54D8E1E35A7F`, valid 2026-06-15 through 2027-06-15. The PFX, password, and temporary app secrets remained under ignored `.deployment` state and were deleted after validation. AWS CLI used the matching public PEM via `AWS_CA_BUNDLE`. .NET used the CurrentUser trust store. Certificate validation stayed enabled; no `--no-verify-ssl`, callback bypass, or insecure handler was used.
+
+AWS CLI 2.37.6 passed PUT, HEAD, metadata, ListObjectsV2, range GET, SHA-256-matched full GET, and DELETE for `validation/space +percent%25/question?literal.txt`. AWSSDK.S3 4.0.103.4 passed the same operation classes with a persistent client, zero retries, `WHEN_REQUIRED` checksums, and non-chunked uploads. Invalid credentials and a 67,108,865-byte upload were denied; admission returned to zero.
+
+The SDK probe injected `X-Forwarded-Host: attacker.invalid` into every signed request. All 280 network requests with operation-level timing succeeded and produced 390 latency samples because `Network:KnownProxies` was empty and Forwarded Headers middleware was not enabled. These counts exclude 15 warm-up requests, 100 list-fixture PUTs, and cleanup. Thus an untrusted direct peer could not rewrite the host used by SigV4. This does not validate a real trusted proxy; that must be tested with its explicit IP and production host/path preservation on the intended server.
+
+Two deployment issues were corrected: the TLS Compose file now replaces rather than appends the published port while retaining an internal HTTP health listener, and lifecycle/validation scripts use trusted `https://localhost` when TLS is selected. The internal health probe requires `127.0.0.1` in `AllowedHosts`. No image rebuild was needed, and bundled rc.2 assembly hashes remained unchanged.
+
+This evidence covers only local direct Kestrel TLS. It does not establish intended DNS, public-certificate, reverse-proxy, Cloudflare, or intended-server compatibility. Machine results are in [fifteenth-tls-validation-summary.json](fifteenth-tls-validation-summary.json) and [fifteenth-tls-sdk-summary.json](fifteenth-tls-sdk-summary.json).

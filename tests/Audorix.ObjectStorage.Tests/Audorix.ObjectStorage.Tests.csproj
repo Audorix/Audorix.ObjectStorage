@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="4.0.103.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Audorix.ObjectStorage\Audorix.ObjectStorage.csproj" />
+    <ProjectReference Include="..\..\src\Audorix.ObjectStorage.Api\Audorix.ObjectStorage.Api.csproj" />
+    <ProjectReference Include="..\..\src\Audorix.ObjectStorage.PostgreSql\Audorix.ObjectStorage.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\src\Audorix.ObjectStorage.S3\Audorix.ObjectStorage.S3.csproj" />
+  </ItemGroup>
+
+</Project>

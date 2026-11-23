@@ -1,0 +1,214 @@
+{
+  "recordedAtUtc": "2026-10-01T00:44:10.8164891+00:00",
+  "options": {
+    "Endpoint": "http://127.0.0.1:5195",
+    "Bucket": "fourteenth-local",
+    "Warmup": 20,
+    "Samples": 200,
+    "SmallBytes": 65536,
+    "ListObjects": 250,
+    "ListPageSize": 50,
+    "ListPasses": 20,
+    "LargeBytes": 8388608,
+    "LargeSamples": 30,
+    "Concurrency": 1,
+    "Output": "docs/fifteenth-performance-http.json"
+  },
+  "sdk": {
+    "name": "AWSSDK.S3",
+    "version": "4.0.0.0",
+    "persistentClients": 1,
+    "maxErrorRetry": 0,
+    "requestChecksumCalculation": "WHEN_REQUIRED",
+    "responseChecksumValidation": "WHEN_REQUIRED"
+  },
+  "semantics": {
+    "headers": "time until SDK returns response headers",
+    "body": "time to consume and integrity-check the response body after headers",
+    "endToEnd": "time from SDK invocation through complete verified body",
+    "measuredNetworkRequests": "requests with operation-level timing; excludes warm-up, list-fixture creation, and cleanup"
+  },
+  "totals": {
+    "uploadedBytes": 264765440,
+    "downloadedBytes": 265584640,
+    "errors": 0,
+    "retries": 0,
+    "measuredNetworkRequests": 1160,
+    "measuredTimingSamples": 1620,
+    "warmupNetworkRequests": 60,
+    "listFixturePutRequests": 250
+  },
+  "throughput": {
+    "measurementWallSeconds": 14.4818895,
+    "uploadMiBPerSecond": 51.75559593289154,
+    "downloadMiBPerSecond": 58.17306115481775
+  },
+  "containerSamples": {
+    "method": "docker stats --no-stream sampled externally during the measured run",
+    "count": 7,
+    "cpuPercentAverage": 48.06428571428571,
+    "cpuPercentMaximum": 74.27,
+    "memoryMiBAverage": 86.40428571428572,
+    "memoryMiBMaximum": 96.27,
+    "configuredCpuLimit": 2.0,
+    "configuredMemoryMiB": 1024
+  },
+  "resources": {
+    "before": {
+      "AtUtc": "2026-10-01T00:43:53.6616751+00:00",
+      "ClientWorkingSetBytes": 47648768,
+      "ClientManagedHeapBytes": 589472,
+      "ClientCpuMilliseconds": 343.75,
+      "ServerWorkingSetBytes": 133611520,
+      "ServerManagedHeapBytes": 3655384,
+      "ServerFreeDiskBytes": 907101995008,
+      "ServerStagingFiles": 0
+    },
+    "after": {
+      "AtUtc": "2026-10-01T00:44:10.7933217+00:00",
+      "ClientWorkingSetBytes": 155951104,
+      "ClientManagedHeapBytes": 40269544,
+      "ClientCpuMilliseconds": 7953.125,
+      "ServerWorkingSetBytes": 143859712,
+      "ServerManagedHeapBytes": 9225504,
+      "ServerFreeDiskBytes": 906832330752,
+      "ServerStagingFiles": 0
+    },
+    "clientCpuMilliseconds": 7609.375
+  },
+  "operations": [
+    {
+      "Operation": "large-get-body",
+      "Count": 30,
+      "MinimumMilliseconds": 61.3146,
+      "P50Milliseconds": 78.1273,
+      "P95Milliseconds": 153.6207,
+      "P99Milliseconds": 230.7769,
+      "MaximumMilliseconds": 230.7769,
+      "AverageMilliseconds": 88.72087666666667,
+      "TotalMilliseconds": 2661.6263
+    },
+    {
+      "Operation": "large-get-end-to-end",
+      "Count": 30,
+      "MinimumMilliseconds": 64.2918,
+      "P50Milliseconds": 81.688,
+      "P95Milliseconds": 160.7948,
+      "P99Milliseconds": 246.3391,
+      "MaximumMilliseconds": 246.3391,
+      "AverageMilliseconds": 92.80393666666667,
+      "TotalMilliseconds": 2784.1181
+    },
+    {
+      "Operation": "large-get-headers",
+      "Count": 30,
+      "MinimumMilliseconds": 2.6992,
+      "P50Milliseconds": 3.4833,
+      "P95Milliseconds": 7.1683,
+      "P99Milliseconds": 15.5561,
+      "MaximumMilliseconds": 15.5561,
+      "AverageMilliseconds": 4.076483333333333,
+      "TotalMilliseconds": 122.2945
+    },
+    {
+      "Operation": "large-put-complete",
+      "Count": 30,
+      "MinimumMilliseconds": 57.5693,
+      "P50Milliseconds": 72.8177,
+      "P95Milliseconds": 151.9696,
+      "P99Milliseconds": 169.2137,
+      "MaximumMilliseconds": 169.2137,
+      "AverageMilliseconds": 89.03132666666666,
+      "TotalMilliseconds": 2670.9397999999997
+    },
+    {
+      "Operation": "list-page",
+      "Count": 100,
+      "MinimumMilliseconds": 3.3218,
+      "P50Milliseconds": 4.6311,
+      "P95Milliseconds": 6.6839,
+      "P99Milliseconds": 12.016,
+      "MaximumMilliseconds": 37.139,
+      "AverageMilliseconds": 5.1324700000000005,
+      "TotalMilliseconds": 513.2470000000001
+    },
+    {
+      "Operation": "range-4k",
+      "Count": 200,
+      "MinimumMilliseconds": 1.864,
+      "P50Milliseconds": 3.2178,
+      "P95Milliseconds": 5.2227,
+      "P99Milliseconds": 9.2935,
+      "MaximumMilliseconds": 32.6074,
+      "AverageMilliseconds": 3.5888220000000013,
+      "TotalMilliseconds": 717.7644000000003
+    },
+    {
+      "Operation": "small-delete",
+      "Count": 200,
+      "MinimumMilliseconds": 5.6632,
+      "P50Milliseconds": 6.9382,
+      "P95Milliseconds": 10.5529,
+      "P99Milliseconds": 14.7935,
+      "MaximumMilliseconds": 63.4308,
+      "AverageMilliseconds": 7.716149500000007,
+      "TotalMilliseconds": 1543.2299000000014
+    },
+    {
+      "Operation": "small-get-body",
+      "Count": 200,
+      "MinimumMilliseconds": 0.0475,
+      "P50Milliseconds": 0.0709,
+      "P95Milliseconds": 0.6896,
+      "P99Milliseconds": 1.6405,
+      "MaximumMilliseconds": 2.9154,
+      "AverageMilliseconds": 0.16560899999999998,
+      "TotalMilliseconds": 33.12179999999999
+    },
+    {
+      "Operation": "small-get-end-to-end",
+      "Count": 200,
+      "MinimumMilliseconds": 2.2914,
+      "P50Milliseconds": 3.7484,
+      "P95Milliseconds": 6.0871,
+      "P99Milliseconds": 11.2303,
+      "MaximumMilliseconds": 35.2225,
+      "AverageMilliseconds": 4.260221500000001,
+      "TotalMilliseconds": 852.0443000000001
+    },
+    {
+      "Operation": "small-get-headers",
+      "Count": 200,
+      "MinimumMilliseconds": 2.2091,
+      "P50Milliseconds": 3.5935,
+      "P95Milliseconds": 5.9483,
+      "P99Milliseconds": 9.58,
+      "MaximumMilliseconds": 35.096,
+      "AverageMilliseconds": 4.088484499999999,
+      "TotalMilliseconds": 817.6968999999998
+    },
+    {
+      "Operation": "small-head",
+      "Count": 200,
+      "MinimumMilliseconds": 2.1257,
+      "P50Milliseconds": 3.0605,
+      "P95Milliseconds": 4.9665,
+      "P99Milliseconds": 8.0825,
+      "MaximumMilliseconds": 15.4809,
+      "AverageMilliseconds": 3.370093999999999,
+      "TotalMilliseconds": 674.0187999999998
+    },
+    {
+      "Operation": "small-put",
+      "Count": 200,
+      "MinimumMilliseconds": 8.0888,
+      "P50Milliseconds": 10.2197,
+      "P95Milliseconds": 15.0745,
+      "P99Milliseconds": 23.3029,
+      "MaximumMilliseconds": 31.8255,
+      "AverageMilliseconds": 11.038798500000002,
+      "TotalMilliseconds": 2207.7597000000005
+    }
+  ],
+  "errorTypes": {}
+}

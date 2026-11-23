@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageId>Audorix.ObjectStorage.S3</PackageId>
+    <Title>Audorix Object Storage S3 Endpoint</Title>
+    <Description>An authenticated, path-style S3-compatible endpoint mapped into an existing ASP.NET Core .NET 10 pipeline.</Description>
+    <PackageTags>object-storage;s3;aspnetcore;sigv4</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Audorix.ObjectStorage\Audorix.ObjectStorage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\package-readmes\Audorix.ObjectStorage.S3.md" Pack="true" PackagePath="README.md" />
+    <None Include="..\..\THIRD_PARTY_NOTICES.md" Pack="true" PackagePath="THIRD_PARTY_NOTICES.md" />
+  </ItemGroup>
+
+</Project>

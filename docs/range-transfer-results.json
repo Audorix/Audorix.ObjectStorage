@@ -1,0 +1,240 @@
+{
+  "completedAt": "2026-09-29T23:41:34.7684011+00:00",
+  "runtime": "10.0.12",
+  "operatingSystem": "Microsoft Windows 10.0.26200",
+  "copyBufferBytes": 131072,
+  "clientMaxErrorRetry": 0,
+  "samplingMethod": "100 ms HTTP sampling from a separate client process after an 8 MiB warm-up; baseline forces full server and client GC.",
+  "acceptanceBudget": {
+    "managedHeapBaseBytes": 134217728,
+    "managedHeapPerTransferBytes": 16777216,
+    "workingSetBaseBytes": 536870912,
+    "workingSetPerTransferBytes": 67108864
+  },
+  "cancelledOverwritePreserved": true,
+  "stagingFilesAfterCancellation": 0,
+  "measurements": [
+    {
+      "direction": "upload",
+      "bytes": 16777216,
+      "concurrency": 1,
+      "duration": "00:00:00.2928442",
+      "throughputMiBPerSecond": 54.63656101094029,
+      "serverBaseline": {
+        "managedHeapBytes": 2407976,
+        "workingSetBytes": 75022336,
+        "gen0Collections": 2,
+        "gen1Collections": 2,
+        "gen2Collections": 2
+      },
+      "serverPeak": {
+        "managedHeapBytes": 2969776,
+        "workingSetBytes": 75931648,
+        "gen0Collections": 2,
+        "gen1Collections": 2,
+        "gen2Collections": 2
+      },
+      "clientBaseline": {
+        "managedHeapBytes": 657104,
+        "workingSetBytes": 70533120,
+        "gen0Collections": 2,
+        "gen1Collections": 2,
+        "gen2Collections": 2
+      },
+      "clientPeak": {
+        "managedHeapBytes": 960560,
+        "workingSetBytes": 70676480,
+        "gen0Collections": 2,
+        "gen1Collections": 2,
+        "gen2Collections": 2
+      },
+      "serverManagedHeapGrowth": 561800,
+      "serverWorkingSetGrowth": 909312
+    },
+    {
+      "direction": "download",
+      "bytes": 16777216,
+      "concurrency": 1,
+      "duration": "00:00:00.2816028",
+      "throughputMiBPerSecond": 56.817616870286805,
+      "serverBaseline": {
+        "managedHeapBytes": 2649288,
+        "workingSetBytes": 75952128,
+        "gen0Collections": 4,
+        "gen1Collections": 4,
+        "gen2Collections": 4
+      },
+      "serverPeak": {
+        "managedHeapBytes": 2787792,
+        "workingSetBytes": 76345344,
+        "gen0Collections": 4,
+        "gen1Collections": 4,
+        "gen2Collections": 4
+      },
+      "clientBaseline": {
+        "managedHeapBytes": 706736,
+        "workingSetBytes": 70897664,
+        "gen0Collections": 4,
+        "gen1Collections": 4,
+        "gen2Collections": 4
+      },
+      "clientPeak": {
+        "managedHeapBytes": 1098192,
+        "workingSetBytes": 71106560,
+        "gen0Collections": 4,
+        "gen1Collections": 4,
+        "gen2Collections": 4
+      },
+      "serverManagedHeapGrowth": 138504,
+      "serverWorkingSetGrowth": 393216
+    },
+    {
+      "direction": "range-4096-from-16777216",
+      "bytes": 4096,
+      "concurrency": 1,
+      "duration": "00:00:00.0087914",
+      "throughputMiBPerSecond": 0.4443262734035535,
+      "serverBaseline": {
+        "managedHeapBytes": 2646216,
+        "workingSetBytes": 76345344,
+        "gen0Collections": 6,
+        "gen1Collections": 6,
+        "gen2Collections": 6
+      },
+      "serverPeak": {
+        "managedHeapBytes": 2834712,
+        "workingSetBytes": 76410880,
+        "gen0Collections": 6,
+        "gen1Collections": 6,
+        "gen2Collections": 6
+      },
+      "clientBaseline": {
+        "managedHeapBytes": 856032,
+        "workingSetBytes": 70246400,
+        "gen0Collections": 6,
+        "gen1Collections": 6,
+        "gen2Collections": 6
+      },
+      "clientPeak": {
+        "managedHeapBytes": 946424,
+        "workingSetBytes": 70307840,
+        "gen0Collections": 6,
+        "gen1Collections": 6,
+        "gen2Collections": 6
+      },
+      "serverManagedHeapGrowth": 188496,
+      "serverWorkingSetGrowth": 65536
+    },
+    {
+      "direction": "upload",
+      "bytes": 134217728,
+      "concurrency": 1,
+      "duration": "00:00:01.7568488",
+      "throughputMiBPerSecond": 72.85772116530461,
+      "serverBaseline": {
+        "managedHeapBytes": 2653160,
+        "workingSetBytes": 78852096,
+        "gen0Collections": 8,
+        "gen1Collections": 8,
+        "gen2Collections": 8
+      },
+      "serverPeak": {
+        "managedHeapBytes": 2992464,
+        "workingSetBytes": 81719296,
+        "gen0Collections": 8,
+        "gen1Collections": 8,
+        "gen2Collections": 8
+      },
+      "clientBaseline": {
+        "managedHeapBytes": 746856,
+        "workingSetBytes": 69439488,
+        "gen0Collections": 8,
+        "gen1Collections": 8,
+        "gen2Collections": 8
+      },
+      "clientPeak": {
+        "managedHeapBytes": 1343112,
+        "workingSetBytes": 70402048,
+        "gen0Collections": 8,
+        "gen1Collections": 8,
+        "gen2Collections": 8
+      },
+      "serverManagedHeapGrowth": 339304,
+      "serverWorkingSetGrowth": 2867200
+    },
+    {
+      "direction": "download",
+      "bytes": 134217728,
+      "concurrency": 1,
+      "duration": "00:00:02.3888322",
+      "throughputMiBPerSecond": 53.58266687798331,
+      "serverBaseline": {
+        "managedHeapBytes": 2679712,
+        "workingSetBytes": 81719296,
+        "gen0Collections": 10,
+        "gen1Collections": 10,
+        "gen2Collections": 10
+      },
+      "serverPeak": {
+        "managedHeapBytes": 3428184,
+        "workingSetBytes": 84701184,
+        "gen0Collections": 10,
+        "gen1Collections": 10,
+        "gen2Collections": 10
+      },
+      "clientBaseline": {
+        "managedHeapBytes": 754608,
+        "workingSetBytes": 70574080,
+        "gen0Collections": 10,
+        "gen1Collections": 10,
+        "gen2Collections": 10
+      },
+      "clientPeak": {
+        "managedHeapBytes": 1297488,
+        "workingSetBytes": 71122944,
+        "gen0Collections": 10,
+        "gen1Collections": 10,
+        "gen2Collections": 10
+      },
+      "serverManagedHeapGrowth": 748472,
+      "serverWorkingSetGrowth": 2981888
+    },
+    {
+      "direction": "range-4096-from-134217728",
+      "bytes": 4096,
+      "concurrency": 1,
+      "duration": "00:00:00.0028708",
+      "throughputMiBPerSecond": 1.3606834331893547,
+      "serverBaseline": {
+        "managedHeapBytes": 2809488,
+        "workingSetBytes": 84643840,
+        "gen0Collections": 12,
+        "gen1Collections": 12,
+        "gen2Collections": 12
+      },
+      "serverPeak": {
+        "managedHeapBytes": 2997592,
+        "workingSetBytes": 84787200,
+        "gen0Collections": 12,
+        "gen1Collections": 12,
+        "gen2Collections": 12
+      },
+      "clientBaseline": {
+        "managedHeapBytes": 904432,
+        "workingSetBytes": 68771840,
+        "gen0Collections": 12,
+        "gen1Collections": 12,
+        "gen2Collections": 12
+      },
+      "clientPeak": {
+        "managedHeapBytes": 986600,
+        "workingSetBytes": 68804608,
+        "gen0Collections": 12,
+        "gen1Collections": 12,
+        "gen2Collections": 12
+      },
+      "serverManagedHeapGrowth": 188104,
+      "serverWorkingSetGrowth": 143360
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-30",
+  "reviewedSourceCommit": "4c5bbe953687023018eb3d2ca230f75e4e6f6c94",
+  "candidateVersion": "0.1.0-rc.2",
+  "result": "passed_with_remaining_release_gates",
+  "findings": [
+    { "id": "SEC-001", "severity": "high", "title": "Unauthenticated sample direct-storage routes", "disposition": "fixed", "evidence": "routes removed; Release build and S3 regressions passed" },
+    { "id": "SEC-002", "severity": "medium", "title": "Unsigned x-amz metadata accepted", "disposition": "fixed", "evidence": "real-Kestrel tampering regression rejects and commits no object" },
+    { "id": "SEC-003", "severity": "medium", "title": "Non-expiring continuation tokens", "disposition": "fixed", "evidence": "S3 and API expiry/current-authorization regressions passed" },
+    { "id": "SEC-004", "severity": "medium", "title": "Incomplete resource admission", "disposition": "fixed", "evidence": "validated limits and bounded admission; overload/cancellation regression passed" },
+    { "id": "SEC-005", "severity": "low", "title": "Unsafe direct metadata header values", "disposition": "fixed", "evidence": "pre-write validation regression passed with empty blob/staging directories" },
+    { "id": "SEC-006", "severity": "informational", "title": "SigV4 replay within clock skew", "disposition": "accepted_documented_risk" },
+    { "id": "SEC-007", "severity": "informational", "title": "Local reparse-point substitution", "disposition": "host_ownership_requirement" }
+  ],
+  "tests": [
+    { "name": "isolated Release build", "status": "passed", "passed": 7, "failed": 0, "warnings": 0 },
+    { "name": "ObjectStorage regressions", "status": "passed_with_skip", "passed": 39, "failed": 0, "skipped": 1, "skipReason": "AWS CLI unavailable on PATH" },
+    { "name": "package-only consumer", "status": "passed", "passed": 1, "failed": 0, "skipped": 0 },
+    { "name": "ReportStudio production authorization boundary", "status": "passed", "passed": 3, "failed": 0, "skipped": 0 },
+    { "name": "shipping dependency vulnerability audit", "status": "passed", "vulnerablePackagesReported": 0 },
+    { "name": "ReportStudio dependency vulnerability audit", "status": "passed", "vulnerablePackagesReported": 0 },
+    { "name": "bounded mixed candidate workload", "status": "passed", "actualSeconds": 60.0274297, "operations": 52555, "verifiedHashes": 10511, "failures": 0 },
+    { "name": "AWS CLI compatibility on rc.2", "status": "skipped", "reason": "AWS CLI unavailable on PATH" },
+    { "name": "rc.2 two-hour soak", "status": "not_run", "reason": "bounded slice ran a one-minute candidate workload only" }
+  ],
+  "resourceLimits": {
+    "sampleMaxObjectBytes": 536870912,
+    "maxKeyUtf8Bytes": 1024,
+    "maxMetadataEntries": 50,
+    "maxMetadataUtf8Bytes": 8192,
+    "maxHeaderCount": 100,
+    "maxHeaderBytes": 32768,
+    "maxQueryUtf8Bytes": 8192,
+    "maxContinuationTokenCharacters": 8192,
+    "continuationTokenLifetimeSeconds": 900,
+    "sampleConcurrentOperations": 32,
+    "sampleQueuedOperations": 8,
+    "maximumListPageSize": 1000
+  },
+  "pilot": {
+    "changed": false,
+    "storageReady": true,
+    "reportStudioReady": true,
+    "frontendReady": true
+  },
+  "releaseBlockers": [
+    "missing project license",
+    "fresh long soak required for rc.2",
+    "AWS CLI rc.2 rerun pending where CLI is available",
+    "intended-server and shared-hosting deployment unverified"
+  ]
+}

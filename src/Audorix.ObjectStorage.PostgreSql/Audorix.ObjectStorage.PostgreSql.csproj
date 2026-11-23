@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageId>Audorix.ObjectStorage.PostgreSql</PackageId>
+    <Title>Audorix Object Storage PostgreSQL Provider</Title>
+    <Description>PostgreSQL metadata persistence and coordinated backup support for Audorix.ObjectStorage.</Description>
+    <PackageTags>object-storage;postgresql;metadata;backup</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Audorix.ObjectStorage\Audorix.ObjectStorage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\package-readmes\Audorix.ObjectStorage.PostgreSql.md" Pack="true" PackagePath="README.md" />
+    <None Include="..\..\THIRD_PARTY_NOTICES.md" Pack="true" PackagePath="THIRD_PARTY_NOTICES.md" />
+  </ItemGroup>
+
+</Project>

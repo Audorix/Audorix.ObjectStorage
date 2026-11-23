@@ -1,0 +1,9 @@
+services:
+  storage:
+    ports: !override ["${AUDORIX_BIND_ADDRESS:-127.0.0.1}:${AUDORIX_PORT:-5195}:8443"]
+    environment:
+      ASPNETCORE_URLS: http://127.0.0.1:8080;https://+:8443
+      ASPNETCORE_Kestrel__Certificates__Default__Path: ${AUDORIX_TLS_CERTIFICATE_PATH:-/run/secrets/audorix-server.pfx}
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ${AUDORIX_TLS_CERTIFICATE_PASSWORD:?external secret required}
+    volumes:
+      - ${AUDORIX_TLS_CERTIFICATE_HOST_PATH:?certificate path required}:/run/secrets/audorix-server.pfx:ro

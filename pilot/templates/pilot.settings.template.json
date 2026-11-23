@@ -1,0 +1,13 @@
+{
+  "storage": {
+    "url": "http://127.0.0.1:5185",
+    "schema": "audorix_pilot_tenth",
+    "bucket": "reportstudio-pilot-tenth"
+  },
+  "reportStudio": {
+    "url": "http://127.0.0.1:5165"
+  },
+  "frontend": {
+    "url": "http://127.0.0.1:5273"
+  }
+}

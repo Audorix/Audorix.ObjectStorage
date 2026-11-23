@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260930165214-8a679426",
+  "result": "passed",
+  "environmentLabel": "local validation",
+  "intendedServerGate": "pending",
+  "source": {
+    "packageSourceCommit": "9bbf4e4203cdb387d2ce66f966f6410f62b145f4",
+    "harnessSourceCommit": "b6c3f027f9ac4368e65a4b356abfed0a921d4419",
+    "packageVersion": "0.1.0-rc.1",
+    "libraryCodeChanged": false
+  },
+  "candidatePackages": [
+    { "file": "Audorix.ObjectStorage.0.1.0-rc.1.nupkg", "bytes": 27544, "sha256": "BA71891122A6C2D98534DB3216DB1F931019794915A8181C4D056D939D9FAA16" },
+    { "file": "Audorix.ObjectStorage.Api.0.1.0-rc.1.nupkg", "bytes": 25435, "sha256": "605C419239B5286611B5FF3588E23C8FB80672A666A00B91568D84577079A0CD" },
+    { "file": "Audorix.ObjectStorage.PostgreSql.0.1.0-rc.1.nupkg", "bytes": 40429, "sha256": "8F8D9458B88C29B18155BF9797253366CA5E974F1DEB597AF6CCCF5C4C086545" },
+    { "file": "Audorix.ObjectStorage.S3.0.1.0-rc.1.nupkg", "bytes": 32129, "sha256": "F0003B44DC6A86B1033B25D5C59983AE208A8AD5BABFD8CC582887CD6B1AE73E" }
+  ],
+  "loadedBinaries": [
+    { "name": "Audorix.ObjectStorage", "version": "0.1.0.0", "sha256": "CC047E1A1CB4E89A814C308AE1AD7DA023DE4FA47AA14065301099B80BE8F273" },
+    { "name": "Audorix.ObjectStorage.PostgreSql", "version": "0.1.0.0", "sha256": "F5E668360C51628BAF714FD833C8414F95132AD56FDF7ABEE1D04EA2B57E23D8" },
+    { "name": "Audorix.ObjectStorage.S3", "version": "0.1.0.0", "sha256": "83A8A2428B47145F2BF2E2F9D18BB5078E2DBF633491C13C03C5C01FC1797570" }
+  ],
+  "environment": {
+    "operatingSystem": "Microsoft Windows 10.0.26200",
+    "architecture": "X64",
+    "dotnetRuntime": "10.0.12",
+    "logicalProcessors": 20,
+    "availableManagedMemoryBytes": 68441858048,
+    "initialFreeDiskBytes": 692455837696,
+    "postgresqlServerVersion": "18.3",
+    "postgresqlClientVersion": "18.3",
+    "networkTopology": "Kestrel loopback HTTP to local PostgreSQL at localhost:5432 on one machine"
+  },
+  "limits": {
+    "durationSeconds": 7200,
+    "concurrency": 4,
+    "smallObjectBytes": 65536,
+    "largeObjectBytes": 4194304,
+    "diskBudgetBytes": 1073741824,
+    "dataOperationP95Milliseconds": 2000,
+    "cleanupP95Milliseconds": 10000,
+    "controlledCancellationP95Milliseconds": 5000,
+    "managedHeapBudgetBytes": 536870912,
+    "workingSetBudgetBytes": 1073741824,
+    "postgresqlConnectionBudget": 32,
+    "unexpectedFailureBudget": 0,
+    "retryBudget": 0
+  },
+  "timing": {
+    "startedAt": "2026-09-30T18:52:15.492387+02:00",
+    "endedAt": "2026-09-30T20:52:55.7866739+02:00",
+    "workloadDuration": "02:00:00.0073279",
+    "wallDurationSeconds": 7240.2942869,
+    "resourceSamples": 119,
+    "resourceSampleIntervalSeconds": 60
+  },
+  "totals": {
+    "completedOperations": 222004,
+    "integrityChecks": 143944,
+    "expectedCancellations": 2355,
+    "expectedAuthorizationDenials": 2,
+    "unexpectedFailures": 0,
+    "retries": 0,
+    "uploadedBytes": 12809273344,
+    "downloadedBytes": 19383393011
+  },
+  "latencyMilliseconds": [
+    { "operation": "upload", "count": 23578, "p50": 320, "p95": 1253, "maximum": 27278.3113 },
+    { "operation": "read", "count": 23578, "p50": 3, "p95": 153, "maximum": 7776.0285 },
+    { "operation": "metadata", "count": 23578, "p50": 2, "p95": 3, "maximum": 369.4167 },
+    { "operation": "list-pagination", "count": 5894, "p50": 15, "p95": 198, "maximum": 11998.1156 },
+    { "operation": "range-explicit", "count": 23577, "p50": 3, "p95": 281, "maximum": 12218.7067 },
+    { "operation": "range-open", "count": 23577, "p50": 3, "p95": 298, "maximum": 1370.968 },
+    { "operation": "range-suffix", "count": 23577, "p50": 2, "p95": 274, "maximum": 12207.5629 },
+    { "operation": "overwrite", "count": 23574, "p50": 330, "p95": 1307, "maximum": 8565.8619 },
+    { "operation": "overwrite-read", "count": 23574, "p50": 3, "p95": 147, "maximum": 11879.1198 },
+    { "operation": "delete", "count": 23574, "p50": 2, "p95": 152, "maximum": 1475.7075 },
+    { "operation": "controlled-cancellation", "count": 2355, "p50": 838, "p95": 1582, "maximum": 7687.4451 },
+    { "operation": "cleanup", "count": 1568, "p50": 2256, "p95": 5344, "maximum": 36784.5734 }
+  ],
+  "throughput": {
+    "averageOperationsPerSecondAcrossSamples": 30.6054939622,
+    "maximumOperationsPerSecondAcrossSamples": 37.6833766696,
+    "averageTransferMiBPerSecondAcrossSamples": 4.2213108798,
+    "maximumTransferMiBPerSecondAcrossSamples": 5.1930174511
+  },
+  "resourceMaxima": {
+    "managedHeapBytes": 25716320,
+    "workingSetBytes": 117788672,
+    "runDiskBytes": 54598922,
+    "activeWorkloadStagingFiles": 4,
+    "postgresqlConnections": 1,
+    "postgresqlDatabaseBytes": 10041023
+  },
+  "postSoak": {
+    "sourceReconciliation": { "referencedBlobs": 16, "physicalBlobs": 16, "missingBlobs": 0, "unreferencedBlobs": 0, "stagingFiles": 0 },
+    "restartVerified": true,
+    "backup": { "manifestObjectCount": 16, "validatedObjectCount": 16, "backupSetId": "8b432654d7ee45daad489fe7018e1946" },
+    "inconsistentBackupRejected": true,
+    "restoredReconciliation": { "referencedBlobs": 16, "physicalBlobs": 16, "missingBlobs": 0, "unreferencedBlobs": 0, "stagingFiles": 0 },
+    "restoredSdkVerification": true,
+    "originalDatasetVerifiedAfterRestore": true,
+    "ownedResourcesCleaned": true
+  },
+  "acceptance": {
+    "operations": "passed",
+    "integrity": "passed",
+    "latency": "passed",
+    "memory": "passed",
+    "disk": "passed",
+    "postgresqlResources": "passed",
+    "finalReconciliation": "passed",
+    "backupRestore": "passed"
+  },
+  "regression": {
+    "packagePinnedReleaseBuild": "passed with zero warnings and zero errors",
+    "legacyDurationMode": {
+      "duration": "00:00:05.0495903",
+      "operations": 205,
+      "verifiedHashes": 41,
+      "failures": 0
+    },
+    "packageConsumer": "not repeated; package contents and hashes were unchanged",
+    "broadLibrarySuite": "not repeated; no packed library code changed"
+  },
+  "existingPilotFinalState": {
+    "storage": "ready at http://127.0.0.1:5185/",
+    "reportStudioApi": "ready at http://127.0.0.1:5165/api/health",
+    "frontend": "ready at http://127.0.0.1:5273/",
+    "browser": "reviewer-scoped Northwind Pilot workspace remained visible with Private brief.pdf"
+  },
+  "measurementLimitations": [
+    "Resource and throughput checkpoints were sampled once per minute and can miss shorter peaks.",
+    "Managed heap and working set describe the storage host process, not total machine or PostgreSQL memory.",
+    "Latency p50/p95 values use one-millisecond histogram buckets; maxima are exact observations.",
+    "This was loopback local validation and does not satisfy the intended-server gate or establish abrupt-host-loss safety."
+  ]
+}
